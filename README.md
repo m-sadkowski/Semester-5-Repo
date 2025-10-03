@@ -27,6 +27,16 @@ Topics covered:
 - **Software Lifecycle Models:** Classical and non-classical (e.g., Agile) models and their selection.
 - **IT Project Management & Methodologies:** Plan-driven and agile approaches.
 
+### 2. Data warehouses
+Topics covered:
+- **Business Intelligence (BI) Fundamentals:** Basic concepts and scope.
+- **Data Warehouse Construction & Implementation:** Principles and methods for building data warehouses.
+- **Data Models for Data Warehousing:** Knowledge and application of specific data models (e.g., star schema, snowflake schema).
+- **Data Warehouse Design Process:** From requirements to implementation and optimization.
+- **Relational Algebra & Aggregate Functions:** Foundational mathematical knowledge for data processing.
+- **OLAP Processing:** Concepts and principles of Online Analytical Processing.
+- **Managerial Dashboards:** Creation and use of dashboards for decision support.
+
 ## Usage
 Each folder contains source code, documentation, and other relevant materials for the respective subject. Explore each directory for further details on projects and implementations.
 
