@@ -12,39 +12,39 @@ import java.util.UUID;
 @Setter
 @Getter
 @Builder
-class Club implements Comparable<Club>, Serializable {
+class Brand implements Comparable<Brand>, Serializable {
     private final UUID id;
     private final String name;
-    private final String stadiumName;
-    private List<Player> players;
+    private final String country;
+    private List<Model> models;
 
-    static Club create(String name, String stadiumName) {
-        return Club.builder()
+    static Brand create(String name, String country) {
+        return Brand.builder()
                 .id(UUID.randomUUID())
                 .name(name)
-                .stadiumName(stadiumName)
-                .players(List.of())
+                .country(country)
+                .models(List.of())
                 .build();
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, stadiumName, players);
+        return Objects.hash(id, name, country, models);
     }
 
     @Override
     public boolean equals(Object obj) {
-        if (!(obj instanceof Club c)) { return false; }
+        if (!(obj instanceof Brand c)) { return false; }
         return this.id.equals(c.id);
     }
 
     @Override
-    public int compareTo(Club other) {
+    public int compareTo(Brand other) {
         return this.id.compareTo(other.id);
     }
 
     @Override
     public String toString() {
-        return "Club: " + name + "(stadium: " + stadiumName + ")" + ", players: " + players;
+        return "Brand: " + name + " (" + country + ")" + ", models: " + models;
     }
 }

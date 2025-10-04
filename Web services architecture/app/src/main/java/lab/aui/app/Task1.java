@@ -9,96 +9,96 @@ import java.util.stream.Collectors;
 
 class Task1 {
     static void execute() {
-        List<Club> clubs = createTestData();
-        Set<Player> players = getUniquePlayers(clubs);
+        List<Brand> brands = createTestData();
+        Set<Model> models = getUniqueModels(brands);
 
-        featureFirstAndSecond(clubs);
-        featureThird(players);
-        featureFourth(players);
-        featureFifth(players);
-        featureSixth(clubs);
-        featureSeventh(clubs);
+        featureFirstAndSecond(brands);
+        featureThird(models);
+        featureFourth(models);
+        featureFifth(models);
+        featureSixth(brands);
+        featureSeventh(brands);
     }
 
-    private static List<Club> createTestData() {
-        Club fcb = Club.create("FC Barcelona", "Camp Nou");
-        Player.create("Robert Lewandowski", 9, fcb);
-        Player.create("Lamine Yamal", 10, fcb);
-        Player.create("Pedri", 8, fcb);
+    private static List<Brand> createTestData() {
+        Brand vw = Brand.create("Volkswagen", "Germany");
+        Model.create("Golf V", 2007, 1.9, vw);
+        Model.create("Passat", 2006, 1.6, vw);
+        Model.create("Touran", 2011, 2.0, vw);
 
-        Club rm = Club.create("Real Madrid", "Bernabeu");
-        Player.create("Kylian Mbappe", 10, rm);
-        Player.create("Arda Guler", 15, rm);
-        Player.create("Dani Carvajal", 2, rm);
+        Brand rm = Brand.create("Audi", "Germany");
+        Model.create("A4", 1998, 1.8, rm);
+        Model.create("Q5", 2015, 3.0, rm);
+        Model.create("B6", 1997, 2.2, rm);
 
-        return List.of(fcb, rm);
+        return List.of(vw, rm);
     }
 
-    private static Set<Player> getUniquePlayers(List<Club> clubs) {
-        return clubs.stream()
-                .flatMap(club -> club.getPlayers().stream())
+    private static Set<Model> getUniqueModels(List<Brand> brands) {
+        return brands.stream()
+                .flatMap(brand -> brand.getModels().stream())
                 .collect(Collectors.toSet());
     }
 
-    private static void featureFirstAndSecond(List<Club> clubs) {
+    private static void featureFirstAndSecond(List<Brand> brands) {
         System.out.println("\nFeatures 1 & 2: ");
-        clubs.forEach(System.out::println);
+        brands.forEach(System.out::println);
     }
 
-    private static void featureThird(Set<Player> playersSet) {
+    private static void featureThird(Set<Model> modelsSet) {
         System.out.println("\nFeature 3: ");
-        playersSet.forEach(System.out::println);
+        modelsSet.forEach(System.out::println);
     }
 
-    private static void featureFourth(Set<Player> playersSet) {
+    private static void featureFourth(Set<Model> modelsSet) {
         System.out.println("\nFeature 4: ");
-        playersSet.stream()
-                .filter(player -> player.getNumber() <= 10)
-                .sorted(Comparator.comparing(Player::getName))
+        modelsSet.stream()
+                .filter(model -> model.getYear() > 2000)
+                .sorted(Comparator.comparing(Model::getName))
                 .forEach(System.out::println);
     }
 
-    private static void featureFifth(Set<Player> playersSet) {
+    private static void featureFifth(Set<Model> modelsSet) {
         System.out.println("\nFeature 5: ");
-        List<PlayerDto> playersDto = playersSet.stream()
-                .map(PlayerMapper::toDto)
+        List<ModelDto> modelsDto = modelsSet.stream()
+                .map(ModelMapper::toDto)
                 .sorted()
                 .toList();
-        playersDto.forEach(System.out::println);
+        modelsDto.forEach(System.out::println);
     }
 
-    private static void featureSixth(List<Club> clubs) {
+    private static void featureSixth(List<Brand> brands) {
         System.out.println("\nFeature 6: ");
-        try (FileOutputStream fileOut = new FileOutputStream("clubs.ser");
+        try (FileOutputStream fileOut = new FileOutputStream("brands.ser");
              ObjectOutputStream out = new ObjectOutputStream(fileOut)) {
-            out.writeObject(clubs);
+            out.writeObject(brands);
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
 
-        try (FileInputStream fileIn = new FileInputStream("clubs.ser");
+        try (FileInputStream fileIn = new FileInputStream("brands.ser");
              ObjectInputStream in = new ObjectInputStream(fileIn)) {
-            List<Club> newClubs = (List<Club>) in.readObject();
-            newClubs.forEach(System.out::println);
+            List<Brand> newBrands = (List<Brand>) in.readObject();
+            newBrands.forEach(System.out::println);
         } catch (IOException | ClassNotFoundException e) {
             System.out.println(e.getMessage());
         }
     }
 
-    private static void featureSeventh(List<Club> clubs) {
+    private static void featureSeventh(List<Brand> brands) {
         System.out.println("\nFeature 7: ");
         try (ForkJoinPool customPool = new ForkJoinPool(2)) {
             customPool.submit(() ->
-                    clubs.parallelStream().forEach(club -> {
+                    brands.parallelStream().forEach(brand -> {
                         System.out.println(Thread.currentThread().getName()
-                                + " is processing " + club.getName());
-                        club.getPlayers().forEach(player -> {
-                            System.out.println(player);
+                                + " is processing " + brand.getName());
+                        brand.getModels().forEach(model -> {
                             try {
                                 Thread.sleep(3000);
                             } catch (InterruptedException e) {
                                 System.out.println(e.getMessage());
                             }
+                            System.out.println(model);
                         });
                     })
             ).get();
