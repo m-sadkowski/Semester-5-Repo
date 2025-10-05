@@ -1,7 +1,10 @@
 package lab.aui.app;
 
-import lombok.Builder;
+import jakarta.persistence.*;
 import lombok.Getter;
+import lombok.Builder;
+import lombok.NoArgsConstructor;
+import lombok.AllArgsConstructor;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -11,12 +14,23 @@ import java.util.UUID;
 
 @Getter
 @Builder
-class Model implements Comparable<Model>, Serializable {
-    private final UUID id;
-    private final String name;
-    private final int year;
-    private final double engine;
-    private final Brand brand;
+@NoArgsConstructor
+@AllArgsConstructor
+@Entity
+@Table(name = "models")
+public class Model implements Comparable<Model>, Serializable {
+    @Id
+    @Column(name = "id", nullable = false, updatable = false)
+    private UUID id;
+    @Column(name = "name", nullable = false)
+    private String name;
+    @Column(name = "production_year", nullable = false)
+    private int year;
+    @Column(name = "engine_capacity", nullable = false)
+    private double engine;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "brand", nullable = false)
+    private Brand brand;
 
     static void create(String name, int year, double engine, Brand brand) {
         Model newModel = Model.builder()
@@ -34,7 +48,7 @@ class Model implements Comparable<Model>, Serializable {
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, year, engine);
+        return Objects.hash(id);
     }
 
     @Override

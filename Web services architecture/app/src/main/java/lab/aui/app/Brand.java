@@ -1,8 +1,11 @@
 package lab.aui.app;
 
-import lombok.Builder;
-import lombok.Getter;
+import jakarta.persistence.*;
 import lombok.Setter;
+import lombok.Getter;
+import lombok.Builder;
+import lombok.NoArgsConstructor;
+import lombok.AllArgsConstructor;
 
 import java.io.Serializable;
 import java.util.List;
@@ -12,10 +15,19 @@ import java.util.UUID;
 @Setter
 @Getter
 @Builder
-class Brand implements Comparable<Brand>, Serializable {
-    private final UUID id;
-    private final String name;
-    private final String country;
+@NoArgsConstructor
+@AllArgsConstructor
+@Entity
+@Table(name = "brands")
+public class Brand implements Comparable<Brand>, Serializable {
+    @Id
+    @Column(name = "id", nullable = false, updatable = false)
+    private UUID id;
+    @Column(name = "name", nullable = false)
+    private String name;
+    @Column(name = "country", nullable = false)
+    private String country;
+    @OneToMany(mappedBy = "brand", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private List<Model> models;
 
     static Brand create(String name, String country) {
@@ -29,7 +41,7 @@ class Brand implements Comparable<Brand>, Serializable {
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, country, models);
+        return Objects.hash(id);
     }
 
     @Override
