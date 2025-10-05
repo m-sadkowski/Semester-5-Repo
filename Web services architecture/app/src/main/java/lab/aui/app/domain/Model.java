@@ -1,26 +1,22 @@
-package lab.aui.app;
+package lab.aui.app.domain;
 
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Builder;
-import lombok.NoArgsConstructor;
-import lombok.AllArgsConstructor;
+import lombok.*;
 
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Objects;
 import java.util.UUID;
 
 @Getter
+@Setter
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
 @Table(name = "models")
-public class Model implements Comparable<Model>, Serializable {
+class Model implements Comparable<Model>, Serializable {
     @Id
-    @Column(name = "id", nullable = false, updatable = false)
+    @Column(name = "id", nullable = false)
     private UUID id;
     @Column(name = "name", nullable = false)
     private String name;
@@ -30,20 +26,26 @@ public class Model implements Comparable<Model>, Serializable {
     private double engine;
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "brand", nullable = false)
-    private Brand brand;
+    private lab.aui.app.domain.Brand brand;
 
-    static void create(String name, int year, double engine, Brand brand) {
-        Model newModel = Model.builder()
+    static Model create(String name, int year, double engine, lab.aui.app.domain.Brand brand) {
+        return Model.builder()
                 .id(UUID.randomUUID())
                 .name(name)
                 .year(year)
                 .engine(engine)
                 .brand(brand)
                 .build();
+    }
 
-        List<Model> newModels = new ArrayList<>(brand.getModels());
-        newModels.add(newModel);
-        brand.setModels(newModels);
+    static void create(UUID id, String name, int year, double engine, lab.aui.app.domain.Brand brand) {
+        Model newModel = Model.builder()
+                .id(id)
+                .name(name)
+                .year(year)
+                .engine(engine)
+                .brand(brand)
+                .build();
     }
 
     @Override
@@ -53,7 +55,9 @@ public class Model implements Comparable<Model>, Serializable {
 
     @Override
     public boolean equals(Object obj) {
-        if (!(obj instanceof Model p)) { return false; }
+        if (!(obj instanceof Model p)) {
+            return false;
+        }
         return this.id.equals(p.id);
     }
 

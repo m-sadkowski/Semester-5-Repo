@@ -1,11 +1,7 @@
-package lab.aui.app;
+package lab.aui.app.domain;
 
 import jakarta.persistence.*;
-import lombok.Setter;
-import lombok.Getter;
-import lombok.Builder;
-import lombok.NoArgsConstructor;
-import lombok.AllArgsConstructor;
+import lombok.*;
 
 import java.io.Serializable;
 import java.util.List;
@@ -19,20 +15,29 @@ import java.util.UUID;
 @AllArgsConstructor
 @Entity
 @Table(name = "brands")
-public class Brand implements Comparable<Brand>, Serializable {
+class Brand implements Comparable<Brand>, Serializable {
     @Id
-    @Column(name = "id", nullable = false, updatable = false)
+    @Column(name = "id", nullable = false)
     private UUID id;
-    @Column(name = "name", nullable = false)
+    @Column(name = "name", nullable = false, unique = true)
     private String name;
     @Column(name = "country", nullable = false)
     private String country;
-    @OneToMany(mappedBy = "brand", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "brand", fetch = FetchType.LAZY, cascade = CascadeType.REMOVE)
     private List<Model> models;
 
     static Brand create(String name, String country) {
         return Brand.builder()
                 .id(UUID.randomUUID())
+                .name(name)
+                .country(country)
+                .models(List.of())
+                .build();
+    }
+
+    static Brand create(UUID id, String name, String country) {
+        return Brand.builder()
+                .id(id)
                 .name(name)
                 .country(country)
                 .models(List.of())
@@ -46,7 +51,9 @@ public class Brand implements Comparable<Brand>, Serializable {
 
     @Override
     public boolean equals(Object obj) {
-        if (!(obj instanceof Brand c)) { return false; }
+        if (!(obj instanceof Brand c)) {
+            return false;
+        }
         return this.id.equals(c.id);
     }
 
@@ -57,6 +64,6 @@ public class Brand implements Comparable<Brand>, Serializable {
 
     @Override
     public String toString() {
-        return "Brand: " + name + " (" + country + ")" + ", models: " + models;
+        return "Brand: " + name + " (" + country + ")";
     }
 }
