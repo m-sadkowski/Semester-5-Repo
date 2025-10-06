@@ -7,7 +7,7 @@ import lombok.experimental.UtilityClass;
 import java.util.List;
 
 @UtilityClass
-public class BrandMapper {
+class BrandMapper {
     static BrandDto toDto(Brand brand) {
         return BrandDto.builder()
                 .id(brand.getId())
