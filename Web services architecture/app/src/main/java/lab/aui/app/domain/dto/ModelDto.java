@@ -1,4 +1,4 @@
-package lab.aui.app;
+package lab.aui.app.domain.dto;
 
 import lombok.Builder;
 import lombok.Data;
@@ -7,7 +7,7 @@ import java.util.UUID;
 
 @Data
 @Builder
-class ModelDto implements Comparable<ModelDto> {
+public class ModelDto implements Comparable<ModelDto> {
     private final UUID id;
     private final String name;
     private final int year;
@@ -17,5 +17,10 @@ class ModelDto implements Comparable<ModelDto> {
     @Override
     public int compareTo(ModelDto other) {
         return this.id.compareTo(other.id);
+    }
+
+    @Override
+    public String toString() {
+        return ("(ID: " + id + ") " + brandName + " " + name + " (" + year + "), " + engine);
     }
 }
