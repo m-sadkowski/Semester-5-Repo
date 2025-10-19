@@ -180,3 +180,7 @@ cython_debug/
 .cursorignore
 .cursorindexingignore
 *.ser
+
+# Generated data
+snapshot1/
+snapshot2/
