@@ -103,8 +103,8 @@ class AppCommandLineRunner implements CommandLineRunner {
     private void addBrand(Scanner scanner) {
         System.out.println("Create new brand [id name country]: ");
         UUID id = UUID.fromString(scanner.nextLine().trim().toLowerCase());
-        String name = scanner.nextLine().trim().toLowerCase();
-        String country = scanner.nextLine().trim().toLowerCase();
+        String name = scanner.nextLine().trim();
+        String country = scanner.nextLine().trim();
         CreateBrandCommand createBrandCommand = CreateBrandCommand.builder()
                 .id(id)
                 .name(name)
