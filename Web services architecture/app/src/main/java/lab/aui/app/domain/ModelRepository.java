@@ -16,9 +16,9 @@ interface ModelRepository extends JpaRepository<Model, UUID> {
     @Query("SELECT m FROM Model m LEFT JOIN FETCH m.brand WHERE m.year = :year")
     List<Model> findAllByYear(int year);
 
-    @Query("SELECT m FROM Model m LEFT JOIN FETCH m.engine WHERE m.engine = :engine")
+    @Query("SELECT m FROM Model m LEFT JOIN FETCH m.brand WHERE m.engine = :engine")
     List<Model> findAllByEngine(double engine);
 
-    @Query("SELECT m FROM Model m LEFT JOIN FETCH m.brand WHERE m.id = :id")
+    @Query("SELECT m FROM Model m LEFT JOIN FETCH m.brand WHERE m.brand.id = :brandId")
     List<Model> findAllByBrandId(UUID brandId);
 }
