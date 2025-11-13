@@ -1,7 +1,9 @@
 package lab.aui.app.domain;
 
 import lab.aui.app.domain.command.CreateModelCommand;
+import lab.aui.app.domain.command.UpdateModelCommand;
 import lab.aui.app.domain.dto.ModelDto;
+import lab.aui.app.domain.dto.ModelSummaryDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -14,46 +16,59 @@ public class ModelService {
     private final ModelRepository modelRepository;
     private final BrandRepository brandRepository;
 
-    public List<ModelDto> getAll() {
+    public List<ModelSummaryDto> getAll() {
         List<Model> models = modelRepository.findAllWithBrand();
-        return ModelMapper.toDto(models);
+        return ModelMapper.toSummaryDto(models);
     }
 
     public ModelDto getById(UUID id) {
         return modelRepository.findById(id)
                 .map(ModelMapper::toDto)
-                .orElseThrow(() -> new RuntimeException(String.format("Model with id %s not found", id)));
+                .orElseThrow(() -> new ResourceNotFoundException(String.format("Model with id %s not found", id)));
     }
 
-    public List<ModelDto> getAllByName(String name) {
+    public List<ModelSummaryDto> getAllByName(String name) {
         List<Model> models = modelRepository.findAllByName(name);
-        return ModelMapper.toDto(models);
+        return ModelMapper.toSummaryDto(models);
     }
 
-    public List<ModelDto> getAllByYear(int year) {
+    public List<ModelSummaryDto> getAllByYear(int year) {
         List<Model> models = modelRepository.findAllByYear(year);
-        return ModelMapper.toDto(models);
+        return ModelMapper.toSummaryDto(models);
     }
 
-    public List<ModelDto> getAllByEngine(double engine) {
+    public List<ModelSummaryDto> getAllByEngine(double engine) {
         List<Model> models = modelRepository.findAllByEngine(engine);
-        return ModelMapper.toDto(models);
+        return ModelMapper.toSummaryDto(models);
     }
 
-    public List<ModelDto> getAllByBrandId(UUID brandId) {
+    public List<ModelSummaryDto> getAllByBrandId(UUID brandId) {
+        if (!brandRepository.existsById(brandId)) {
+            throw new ResourceNotFoundException(String.format("Brand with id %s not found", brandId));
+        }
         List<Model> models = modelRepository.findAllByBrandId(brandId);
-        return ModelMapper.toDto(models);
+        return ModelMapper.toSummaryDto(models);
     }
 
-    public void create(CreateModelCommand command) {
+    public Model create(UUID brandId, CreateModelCommand command) {
         Model model = ModelMapper.toEntity(command);
-        Brand brand = brandRepository.findById(command.getBrandId())
-                .orElseThrow(() -> new RuntimeException(String.format("Brand with id %s not found", command.getBrandId())));
+        Brand brand = brandRepository.findById(brandId)
+                .orElseThrow(() -> new ResourceNotFoundException(String.format("Brand with id %s not found", brandId)));
         model.setBrand(brand);
+        return modelRepository.save(model);
+    }
+
+    public void update(UUID id, UpdateModelCommand command) {
+        Model model = modelRepository.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException(String.format("Model with id %s not found", id)));
+        ModelMapper.updateEntity(command, model);
         modelRepository.save(model);
     }
 
     public void delete(UUID id) {
+        if (!modelRepository.existsById(id)) {
+            throw new ResourceNotFoundException(String.format("Model with id %s not found", id));
+        }
         modelRepository.deleteById(id);
     }
 }

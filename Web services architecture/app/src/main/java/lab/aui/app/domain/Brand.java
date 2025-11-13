@@ -15,7 +15,7 @@ import java.util.UUID;
 @AllArgsConstructor
 @Entity
 @Table(name = "brands")
-class Brand implements Comparable<Brand>, Serializable {
+public class Brand implements Comparable<Brand>, Serializable {
     @Id
     @Column(name = "id", nullable = false)
     private UUID id;

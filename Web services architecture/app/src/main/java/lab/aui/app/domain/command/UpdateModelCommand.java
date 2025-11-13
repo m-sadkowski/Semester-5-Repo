@@ -5,7 +5,7 @@ import lombok.Data;
 
 @Data
 @Builder
-public class CreateModelCommand {
+public class UpdateModelCommand {
     private String name;
     private int year;
     private double engine;

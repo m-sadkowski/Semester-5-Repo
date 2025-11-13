@@ -1,11 +1,14 @@
-package lab.aui.app.domain.command;
+package lab.aui.app.domain.dto;
 
 import lombok.Builder;
 import lombok.Data;
 
+import java.util.UUID;
+
 @Data
 @Builder
-public class CreateBrandCommand {
+public class BrandSummaryDto {
+    private UUID id;
     private String name;
     private String country;
 }

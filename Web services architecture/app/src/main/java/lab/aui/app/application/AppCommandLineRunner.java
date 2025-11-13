@@ -23,9 +23,9 @@ class AppCommandLineRunner implements CommandLineRunner {
         this.modelService = modelService;
     }
 
-    @Override
+    //@Override
     public void run(String... args) throws Exception {
-        Scanner scanner = new Scanner(System.in);
+        /*Scanner scanner = new Scanner(System.in);
 
         boolean running = true;
 
@@ -66,7 +66,7 @@ class AppCommandLineRunner implements CommandLineRunner {
             }
         }
 
-        scanner.close();
+        scanner.close();*/
     }
 
     private void printHelp() {
@@ -79,7 +79,7 @@ class AppCommandLineRunner implements CommandLineRunner {
         System.out.println("- delete model");
         System.out.println("- exit");
     }
-
+    /*
     private void listBrands() {
         List<BrandDto> brands = brandService.getAll();
         if (brands.isEmpty()) {
@@ -103,8 +103,8 @@ class AppCommandLineRunner implements CommandLineRunner {
     private void addBrand(Scanner scanner) {
         System.out.println("Create new brand [id name country]: ");
         UUID id = UUID.fromString(scanner.nextLine().trim().toLowerCase());
-        String name = scanner.nextLine().trim().toLowerCase();
-        String country = scanner.nextLine().trim().toLowerCase();
+        String name = scanner.nextLine().trim();
+        String country = scanner.nextLine().trim();
         CreateBrandCommand createBrandCommand = CreateBrandCommand.builder()
                 .id(id)
                 .name(name)
@@ -141,4 +141,5 @@ class AppCommandLineRunner implements CommandLineRunner {
         UUID id = UUID.fromString(scanner.nextLine().trim().toLowerCase());
         modelService.delete(id);
     }
+    */
 }
