@@ -42,7 +42,6 @@ public class ModelMapper {
                 .toList();
     }
 
-
     public static Model toEntity(CreateModelCommand command) {
         return Model.builder()
                 .id(UUID.randomUUID())

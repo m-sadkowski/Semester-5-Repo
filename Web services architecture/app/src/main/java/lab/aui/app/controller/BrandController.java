@@ -41,16 +41,16 @@ public class BrandController {
         Brand brand = brandService.create(command);
 
         URI location = ServletUriComponentsBuilder
-                .fromCurrentRequest()
+                .fromCurrentRequest() // bazowy URL z obecnego żądania
                 .path("/{id}")
                 .buildAndExpand(brand.getId())
                 .toUri();
 
-        return ResponseEntity.created(location).body(BrandMapper.toSummaryDto(brand));
+        return ResponseEntity.created(location).body(BrandMapper.toSummaryDto(brand)); // automatycznie ustawia status na 201
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<Void> updateBrand(@PathVariable("id") UUID id, @RequestBody UpdateBrandCommand command) {
+    public ResponseEntity<Void> updateBrand(@PathVariable("id") UUID id /* konwertuje id z url na UUID */, @RequestBody UpdateBrandCommand command) {
         brandService.update(id, command);
         return ResponseEntity.noContent().build();
     }

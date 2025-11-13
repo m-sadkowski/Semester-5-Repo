@@ -34,14 +34,12 @@ public class ModelController {
     }
 
     @PostMapping("/brands/{brandId}/models")
-    public ResponseEntity<ModelSummaryDto> createModelForBrand(
-            @PathVariable("brandId") UUID brandId,
-            @RequestBody CreateModelCommand command) {
-
+    public ResponseEntity<ModelSummaryDto> createModelForBrand(@PathVariable("brandId") UUID brandId,
+                                                               @RequestBody CreateModelCommand command) {
         Model model = modelService.create(brandId, command);
 
         URI location = ServletUriComponentsBuilder
-                .fromCurrentContextPath()
+                .fromCurrentContextPath() // ignoruje caly obecny adres i bierze bazę
                 .path("/models/{id}")
                 .buildAndExpand(model.getId())
                 .toUri();
