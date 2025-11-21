@@ -1,0 +1,20 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: gateway-service
+  main:
+    web-application-type: reactive
+  cloud:
+    gateway:
+      routes:
+        - id: brand-service
+          uri: http://localhost:8081
+          predicates:
+            - Path=/api/brands/**
+
+        - id: model-service
+          uri: http://localhost:8082
+          predicates:
+            - Path=/api/models/**

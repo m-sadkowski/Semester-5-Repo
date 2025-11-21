@@ -1,0 +1,259 @@
+{
+	"info": {
+		"_postman_id": "dc5e3e08-20b3-452c-a49d-f62ad5c74515",
+		"name": "AUI",
+		"description": "### Welcome to Postman! This is your first collection. \n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests\n• Test your API in real-world scenarios\n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "50269670",
+		"_collection_link": "https://msadkowski000-9880319.postman.co/workspace/MS's-Workspace~a530b90c-c877-40e5-8328-d54fd5f54d3a/collection/50269670-dc5e3e08-20b3-452c-a49d-f62ad5c74515?action=share&source=collection_link&creator=50269670"
+	},
+	"item": [
+		{
+			"name": "Ford",
+			"item": [
+				{
+					"name": "Create brand Ford",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var jsonData = pm.response.json();\r",
+									"pm.globals.set(\"newBrandId\", jsonData.id);\r",
+									"console.log(\"Zapisano ID marki: \" + jsonData.id);"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Ford\",\r\n  \"country\": \"USA\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/brands",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"brands"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Ford by generated ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/brands/{{newBrandId}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"brands",
+								"{{newBrandId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create model Mustang",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var jsonData = pm.response.json();\r",
+									"pm.globals.set(\"newModelId\", jsonData.id);"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Mustang\",\r\n  \"year\": 1969,\r\n  \"engine\": 5.0,\r\n  \"brandId\": \"{{newBrandId}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/models",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"models"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Mustang",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Mustang\",\r\n  \"year\": 2024,\r\n  \"engine\": 5.0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/models/{{newModelId}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"models",
+								"{{newModelId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Mustang by generated ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/models/{{newModelId}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"models",
+								"{{newModelId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete brand Ford",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/brands/{{newBrandId}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"brands",
+								"{{newBrandId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete model Mustang",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/models/{{newModelId}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"models",
+								"{{newModelId}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Get brands",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/brands",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"brands"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Volkswagen by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/brands/f5875513-bf7b-4ae1-b8a5-5b70a1b90e76",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"brands",
+						"f5875513-bf7b-4ae1-b8a5-5b70a1b90e76"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get models",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/models",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"models"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
