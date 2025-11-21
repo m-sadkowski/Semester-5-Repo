@@ -3,14 +3,10 @@ package lab.aui.model_service.domain.command;
 import lombok.Builder;
 import lombok.Data;
 
-import java.util.UUID;
-
 @Data
 @Builder
 public class CreateModelCommand {
-    private final UUID id;
-    private final String name;
-    private final int year;
-    private final double engine;
-    private final UUID brandId;
+    private String name;
+    private int year;
+    private double engine;
 }
