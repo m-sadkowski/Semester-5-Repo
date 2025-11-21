@@ -1,0 +1,129 @@
+@host = http://localhost:8080
+@nonExistentId = 123e4567-e89b-12d3-a456-426614174000
+@contentType = application/json
+
+### wszystkie marki
+GET {{host}}/api/brands
+Accept: {{contentType}}
+
+### nowa marka
+POST {{host}}/api/brands
+Content-Type: {{contentType}}
+
+{
+  "name": "Ford",
+  "country": "USA"
+}
+
+> {%
+    client.global.set("newBrandId", response.body.id);
+%}
+
+### pobiera utworzona marke po jej id
+GET {{host}}/api/brands/{{newBrandId}}
+Accept: {{contentType}}
+
+### aktulizuje nazwe forda
+PUT {{host}}/api/brands/{{newBrandId}}
+Content-Type: {{contentType}}
+
+{
+  "name": "Ford Motors",
+  "country": "USA"
+}
+
+### pobiera forda (po id z tworzenia)
+GET {{host}}/api/brands/{{newBrandId}}
+Accept: {{contentType}}
+
+### nowy model dla forda
+POST {{host}}/api/brands/{{newBrandId}}/models
+Content-Type: {{contentType}}
+
+{
+  "name": "Mustang",
+  "year": 1969,
+  "engine": 5.0
+}
+
+> {%
+    client.global.set("newModelId", response.body.id);
+%}
+
+### pobiera liste modeli z summarydto
+GET {{host}}/api/models
+Accept: {{contentType}}
+
+### pobiera wszystkie modele forda
+GET {{host}}/api/brands/{{newBrandId}}/models
+Accept: {{contentType}}
+
+### pobiera mustanga po id z tworzenia
+GET {{host}}/api/models/{{newModelId}}
+Accept: {{contentType}}
+
+### zmienia rocznik mustanga
+PUT {{host}}/api/models/{{newModelId}}
+Content-Type: {{contentType}}
+
+{
+  "name": "Mustang",
+  "year": 1970,
+  "engine": 5.0
+}
+
+### pobiera mustanga
+GET {{host}}/api/models/{{newModelId}}
+Accept: {{contentType}}
+
+### pobiera marke o nieistniejacym id
+GET {{host}}/api/brands/{{nonExistentId}}
+Accept: {{contentType}}
+
+### pobiera modele nieistniejacej marki
+GET {{host}}/api/brands/{{nonExistentId}}/models
+Accept: {{contentType}}
+
+### tworzy model nieistniejacej marki
+POST {{host}}/api/brands/{{nonExistentId}}/models
+Content-Type: {{contentType}}
+
+{
+  "name": "Niezadziala",
+  "year": 2000,
+  "engine": 0.1
+}
+
+### tworzy nowa marke
+POST {{host}}/api/brands
+Content-Type: {{contentType}}
+
+{
+  "name": "Toyota",
+  "country": "Japonia"
+}
+
+> {%
+    client.global.set("emptyBrandId", response.body.id);
+%}
+
+### pobiera modele z toyoty (puste)
+GET {{host}}/api/brands/{{emptyBrandId}}/models
+Accept: {{contentType}}
+
+### usuwa toyote (pusta marke)
+DELETE {{host}}/api/brands/{{emptyBrandId}}
+
+### usuwa forda
+DELETE {{host}}/api/brands/{{newBrandId}}
+
+### sprawdza czy usunieto forda
+GET {{host}}/api/brands/{{newBrandId}}
+Accept: {{contentType}}
+
+### sprawdza czy usunieto mustanga przy usuwaniu forda
+GET {{host}}/api/models/{{newModelId}}
+Accept: {{contentType}}
+
+### probuje usunac usunietego mustanga
+DELETE {{host}}/api/models/{{newModelId}}
