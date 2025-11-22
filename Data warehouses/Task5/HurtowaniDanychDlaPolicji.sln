@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.36602.28
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "HurtowaniDanychDlaPolicji", "HurtowaniDanychDlaPolicji.dwproj", "{2D00550B-9D20-48D1-ACF1-ABE09D0B19D8}"
+EndProject
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "LoadETL", "..\LoadETL\LoadETL.dtproj", "{9C8900EF-33BF-4260-A7BE-3E545D81BE15}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2D00550B-9D20-48D1-ACF1-ABE09D0B19D8}.Development|Default.ActiveCfg = Development
+		{2D00550B-9D20-48D1-ACF1-ABE09D0B19D8}.Development|Default.Build.0 = Development
+		{2D00550B-9D20-48D1-ACF1-ABE09D0B19D8}.Development|Default.Deploy.0 = Development
+		{9C8900EF-33BF-4260-A7BE-3E545D81BE15}.Development|Default.ActiveCfg = Development
+		{9C8900EF-33BF-4260-A7BE-3E545D81BE15}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3F4C6D5A-1814-45EA-A702-BE49097F7F4D}
+	EndGlobalSection
+EndGlobal

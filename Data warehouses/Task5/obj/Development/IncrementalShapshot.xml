@@ -1,0 +1,124 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>HurtowaniDanychDlaPolicji</Database>
+    <Server>localhost</Server>
+    <ConnectionString>Data Source=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>8hglcNuBaRAcRBtkLr3cm6rQT6U=11/19/2025 7:30:28 PM11/21/2025 1:55:57 PM</TimeStamp>
+        <ID>
+          <String>policjaHD</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>qK3EN2YIBcHmzjOZ2FfInx6B3c0=11/16/2025 12:48:13 PM11/21/2025 1:55:57 PM</TimeStamp>
+        <ID>
+          <String>policjaHDview</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>nXEmqJECxoVoY7gycJlxXdET+xg=11/10/2025 9:42:59 PM11/21/2025 1:55:57 PM</TimeStamp>
+        <ID>
+          <String>Miejsce</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>FlL89KuYu7gKIzIdWsXVNLGOqyE=11/10/2025 10:39:14 PM11/21/2025 1:55:57 PM</TimeStamp>
+        <ID>
+          <String>Czas</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>ujzJB64w4pYjCkn7lif+CblRAy4=11/16/2025 3:50:59 PM11/21/2025 1:55:57 PM</TimeStamp>
+        <ID>
+          <String>Data</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>NrUT4v4FN6P76Cq4YKOXU0T0jG8=11/10/2025 9:42:59 PM11/21/2025 1:55:57 PM</TimeStamp>
+        <ID>
+          <String>Zdarzenia</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>owiDXfd6T9P6sq9AOAM96QNy4Xg=11/10/2025 9:42:59 PM11/21/2025 1:55:57 PM</TimeStamp>
+        <ID>
+          <String>Opis Kary</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>/6nlYrifphQ6JK4UMmQXIfW/+2Q=11/10/2025 9:42:59 PM11/21/2025 1:55:57 PM</TimeStamp>
+        <ID>
+          <String>Notowani</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>L3GU7gaow/DnfC6gsH/+BlyKv6o=11/10/2025 9:42:59 PM11/21/2025 1:55:57 PM</TimeStamp>
+        <ID>
+          <String>Smieci</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>CKkxHP1xXpkO8eK7fZsX/Bfj6bQ=11/10/2025 9:42:59 PM11/21/2025 1:55:57 PM</TimeStamp>
+        <ID>
+          <String>Opis Patrolu</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>QKSx8DvVieJb0paAIHy4vKNsKA8=11/10/2025 11:00:36 PM11/21/2025 1:55:57 PM</TimeStamp>
+        <ID>
+          <String>Patrole</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>fUFxpBO7Jh/1EFWVR2mj1E1ojNc=11/22/2025 12:14:07 PM11/21/2025 1:55:57 PM</TimeStamp>
+        <ID>
+          <String>Interwencje</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>EPelgD+1TKIkcZF9ZX6qOjmlrxA=11/16/2025 1:01:11 PM11/21/2025 1:55:57 PMs7Ug9lSC5ntpFbgMmvxveZ5TrhM=11/10/2025 11:49:15 PM11/21/2025 1:55:57 PM</TimeStamp>
+        <ID>
+          <String>policjaHDview</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>NVcyph/rkFqHLueTE1vV/2vtVP8=11/10/2025 8:47:41 PM11/21/2025 1:55:57 PM</TimeStamp>
+      <ID>
+        <String>HurtowaniDanychDlaPolicji</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2025-11-22T13:09:59.136667Z</LastDeployed>
+</DeploymentSnapshot>
