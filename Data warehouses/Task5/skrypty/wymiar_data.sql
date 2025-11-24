@@ -1,3 +1,6 @@
+USE baza
+GO
+
 DECLARE @DataPoczatkowa DATE = '2024-01-01';
 DECLARE @DataKoncowa DATE = '2030-12-31';
 DECLARE @AktualnaData DATE = @DataPoczatkowa;

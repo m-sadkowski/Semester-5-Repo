@@ -7,16 +7,12 @@ GO
 CREATE VIEW vETL_OpisPatrolu
 AS
 SELECT DISTINCT
-    CAST(LEFT(SUBSTRING(Radiowoz, 1, CHARINDEX(' ', Radiowoz) - 1), 20) AS VARCHAR(20)) AS Marka_radiowozu,
-    CAST(LEFT(SUBSTRING(Radiowoz, CHARINDEX(' ', Radiowoz) + 1, LEN(Radiowoz)), 20) AS VARCHAR(20)) AS Model_radiowozu,
-	CAST(LEFT(LTRIM(RTRIM(Nr_rejestracyjny)), 8) AS VARCHAR(8)) AS Nr_rejestracyjny,
-	CAST(LEFT(LTRIM(RTRIM(Nr_odznaki_kierowcy)), 6) AS VARCHAR(6)) AS Nr_odznaki_kierowcy,
-    CAST(LEFT(LTRIM(RTRIM(Nr_odznaki_partnera)), 6) AS VARCHAR(6)) AS Nr_odznaki_partnera
-
+    SUBSTRING(Radiowoz, 1, CHARINDEX(' ', Radiowoz) - 1) AS Marka_radiowozu,
+	SUBSTRING(Radiowoz, CHARINDEX(' ', Radiowoz) + 1, LEN(Radiowoz)) AS Model_radiowozu,
+	Nr_rejestracyjny AS Nr_rejestracyjny,
+	Nr_odznaki_kierowcy AS Nr_odznaki_kierowcy,
+    Nr_odznaki_partnera AS Nr_odznaki_partnera
 FROM dane_do_hurtowni.dbo.Patrole
-WHERE Radiowoz IS NOT NULL 
-  AND CHARINDEX(' ', Radiowoz) > 0
-  AND Nr_rejestracyjny IS NOT NULL;
 GO
 
 MERGE INTO dbo.Opis_patrolu AS TT

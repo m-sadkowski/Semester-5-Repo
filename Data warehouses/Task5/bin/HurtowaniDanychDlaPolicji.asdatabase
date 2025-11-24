@@ -1666,6 +1666,32 @@
       <Annotations>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+          <Value>
+            <dds xmlns="">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3142" scrolltop="-4538" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7752" y="14076" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                <font>
+                  <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+                </font>
+                <mouseicon>
+                  <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                </mouseicon>
+              </diagram>
+              <layoutmanager>
+                <ddsxmlobj />
+              </layoutmanager>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Patrole_Fakty" left="-112" top="53" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="4180" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="000e00005410000088130000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_Patrole_Fakty" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+            </dds>
+          </Value>
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
@@ -1681,19 +1707,19 @@
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-          <Value>0</Value>
+          <Value>-3142</Value>
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-          <Value>0</Value>
+          <Value>-4538</Value>
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
-          <Value>0</Value>
+          <Value>-112</Value>
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
-          <Value>0</Value>
+          <Value>53</Value>
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
@@ -1727,7 +1753,129 @@
               </Source>
             </KeyColumn>
           </KeyColumns>
+          <AttributeRelationships>
+            <AttributeRelationship>
+              <AttributeID>ID Opisu Patrolu</AttributeID>
+              <Name>ID Opisu Patrolu</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>ID Smieci</AttributeID>
+              <Name>ID Smieci</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>ID Daty Rozpoczecia</AttributeID>
+              <Name>ID Daty Rozpoczecia</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>ID Daty Zakonczenia</AttributeID>
+              <Name>ID Daty Zakonczenia</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>ID Czasu Rozpoczecia</AttributeID>
+              <Name>ID Czasu Rozpoczecia</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>ID Czasu Zakonczenia</AttributeID>
+              <Name>ID Czasu Zakonczenia</Name>
+            </AttributeRelationship>
+          </AttributeRelationships>
           <OrderBy>Key</OrderBy>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>ID Opisu Patrolu</ID>
+          <Name>ID Opisu Patrolu</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_Patrole_Fakty</TableID>
+                <ColumnID>ID_Opisu_patrolu</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>ID Smieci</ID>
+          <Name>ID Smieci</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_Patrole_Fakty</TableID>
+                <ColumnID>ID_Smieci</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>ID Daty Rozpoczecia</ID>
+          <Name>ID Daty Rozpoczecia</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_Patrole_Fakty</TableID>
+                <ColumnID>ID_Daty_rozpoczecia</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>ID Daty Zakonczenia</ID>
+          <Name>ID Daty Zakonczenia</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_Patrole_Fakty</TableID>
+                <ColumnID>ID_Daty_zakonczenia</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>ID Czasu Rozpoczecia</ID>
+          <Name>ID Czasu Rozpoczecia</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_Patrole_Fakty</TableID>
+                <ColumnID>ID_Czasu_rozpoczecia</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>ID Czasu Zakonczenia</ID>
+          <Name>ID Czasu Zakonczenia</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_Patrole_Fakty</TableID>
+                <ColumnID>ID_Czasu_zakonczenia</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
           <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
         </Attribute>
@@ -1744,7 +1892,7 @@
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
           <Value>
             <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1766" scrolltop="-3996" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10425" y="13996" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1766" scrolltop="-4074" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7752" y="14076" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                 <font>
                   <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
                 </font>
@@ -1787,7 +1935,7 @@
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-          <Value>-3996</Value>
+          <Value>-4074</Value>
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
@@ -1848,6 +1996,22 @@
               <AttributeID>ID Patrolu</AttributeID>
               <Name>ID Patrolu</Name>
             </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>ID Daty</AttributeID>
+              <Name>ID Daty</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>ID Czasu</AttributeID>
+              <Name>ID Czasu</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>ID Miejsca</AttributeID>
+              <Name>ID Miejsca</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>ID Zdarzenia</AttributeID>
+              <Name>ID Zdarzenia</Name>
+            </AttributeRelationship>
           </AttributeRelationships>
           <OrderBy>Key</OrderBy>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
@@ -1865,6 +2029,71 @@
               </Source>
             </KeyColumn>
           </KeyColumns>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>ID Daty</ID>
+          <Name>ID Daty</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_Interwencje_Fakty</TableID>
+                <ColumnID>ID_Daty</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>ID Czasu</ID>
+          <Name>ID Czasu</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_Interwencje_Fakty</TableID>
+                <ColumnID>ID_Czasu</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>ID Miejsca</ID>
+          <Name>ID Miejsca</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_Interwencje_Fakty</TableID>
+                <ColumnID>ID_Miejsca</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>ID Zdarzenia</ID>
+          <Name>ID Zdarzenia</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_Interwencje_Fakty</TableID>
+                <ColumnID>ID_Zdarzenia</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
           <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
         </Attribute>
@@ -1883,7 +2112,7 @@
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
           <Value>
             <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="54" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3800" scrolltop="10427" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="36486" y="13996" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="54" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3800" scrolltop="10427" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="20770" y="14076" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                 <font>
                   <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
                 </font>
@@ -2646,6 +2875,24 @@
             <Attribute>
               <AttributeID>ID Patrolu</AttributeID>
             </Attribute>
+            <Attribute>
+              <AttributeID>ID Opisu Patrolu</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>ID Smieci</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>ID Daty Rozpoczecia</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>ID Daty Zakonczenia</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>ID Czasu Rozpoczecia</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>ID Czasu Zakonczenia</AttributeID>
+            </Attribute>
           </Attributes>
         </Dimension>
         <Dimension>
@@ -2658,6 +2905,18 @@
             </Attribute>
             <Attribute>
               <AttributeID>ID Patrolu</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>ID Daty</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>ID Czasu</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>ID Miejsca</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>ID Zdarzenia</AttributeID>
             </Attribute>
           </Attributes>
         </Dimension>
@@ -2908,37 +3167,83 @@
                 </Attribute>
               </Attributes>
             </Dimension>
-            <Dimension xsi:type="ManyToManyMeasureGroupDimension">
-              <CubeDimensionID>ID Daty Rozpoczecia</CubeDimensionID>
-              <MeasureGroupID>Patrole Fakty</MeasureGroupID>
-            </Dimension>
-            <Dimension xsi:type="ManyToManyMeasureGroupDimension">
-              <CubeDimensionID>ID Daty Zakonczenia</CubeDimensionID>
-              <MeasureGroupID>Patrole Fakty</MeasureGroupID>
-            </Dimension>
-            <Dimension xsi:type="ManyToManyMeasureGroupDimension">
-              <CubeDimensionID>ID Czasu Rozpoczecia</CubeDimensionID>
-              <MeasureGroupID>Patrole Fakty</MeasureGroupID>
-            </Dimension>
-            <Dimension xsi:type="ManyToManyMeasureGroupDimension">
-              <CubeDimensionID>ID Czasu Zakonczenia</CubeDimensionID>
-              <MeasureGroupID>Patrole Fakty</MeasureGroupID>
-            </Dimension>
-            <Dimension xsi:type="ManyToManyMeasureGroupDimension">
+            <Dimension xsi:type="ReferenceMeasureGroupDimension">
               <CubeDimensionID>Opis Patrolu</CubeDimensionID>
-              <MeasureGroupID>Patrole Fakty</MeasureGroupID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>ID Opisu Patrolu</AttributeID>
+                  <Type>Granularity</Type>
+                </Attribute>
+              </Attributes>
+              <IntermediateCubeDimensionID>Patrole</IntermediateCubeDimensionID>
+              <IntermediateGranularityAttributeID>ID Opisu Patrolu</IntermediateGranularityAttributeID>
+              <Materialization>Regular</Materialization>
+              <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
             </Dimension>
-            <Dimension xsi:type="ManyToManyMeasureGroupDimension">
+            <Dimension xsi:type="ReferenceMeasureGroupDimension">
               <CubeDimensionID>Smieci</CubeDimensionID>
-              <MeasureGroupID>Patrole Fakty</MeasureGroupID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>ID Smieci</AttributeID>
+                  <Type>Granularity</Type>
+                </Attribute>
+              </Attributes>
+              <IntermediateCubeDimensionID>Patrole</IntermediateCubeDimensionID>
+              <IntermediateGranularityAttributeID>ID Smieci</IntermediateGranularityAttributeID>
+              <Materialization>Regular</Materialization>
+              <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
             </Dimension>
-            <Dimension xsi:type="ManyToManyMeasureGroupDimension">
-              <CubeDimensionID>Opis Kary</CubeDimensionID>
-              <MeasureGroupID>Kary Fakty</MeasureGroupID>
+            <Dimension xsi:type="ReferenceMeasureGroupDimension">
+              <CubeDimensionID>ID Daty Rozpoczecia</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>ID Daty</AttributeID>
+                  <Type>Granularity</Type>
+                </Attribute>
+              </Attributes>
+              <IntermediateCubeDimensionID>Patrole</IntermediateCubeDimensionID>
+              <IntermediateGranularityAttributeID>ID Daty Rozpoczecia</IntermediateGranularityAttributeID>
+              <Materialization>Regular</Materialization>
+              <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
             </Dimension>
-            <Dimension xsi:type="ManyToManyMeasureGroupDimension">
-              <CubeDimensionID>Notowani</CubeDimensionID>
-              <MeasureGroupID>Kary Fakty</MeasureGroupID>
+            <Dimension xsi:type="ReferenceMeasureGroupDimension">
+              <CubeDimensionID>ID Daty Zakonczenia</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>ID Daty</AttributeID>
+                  <Type>Granularity</Type>
+                </Attribute>
+              </Attributes>
+              <IntermediateCubeDimensionID>Patrole</IntermediateCubeDimensionID>
+              <IntermediateGranularityAttributeID>ID Daty Zakonczenia</IntermediateGranularityAttributeID>
+              <Materialization>Regular</Materialization>
+              <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+            </Dimension>
+            <Dimension xsi:type="ReferenceMeasureGroupDimension">
+              <CubeDimensionID>ID Czasu Rozpoczecia</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>ID Czasu</AttributeID>
+                  <Type>Granularity</Type>
+                </Attribute>
+              </Attributes>
+              <IntermediateCubeDimensionID>Patrole</IntermediateCubeDimensionID>
+              <IntermediateGranularityAttributeID>ID Czasu Rozpoczecia</IntermediateGranularityAttributeID>
+              <Materialization>Regular</Materialization>
+              <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+            </Dimension>
+            <Dimension xsi:type="ReferenceMeasureGroupDimension">
+              <CubeDimensionID>ID Czasu Zakonczenia</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>ID Czasu</AttributeID>
+                  <Type>Granularity</Type>
+                </Attribute>
+              </Attributes>
+              <IntermediateCubeDimensionID>Patrole</IntermediateCubeDimensionID>
+              <IntermediateGranularityAttributeID>ID Czasu Zakonczenia</IntermediateGranularityAttributeID>
+              <Materialization>Regular</Materialization>
+              <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
             </Dimension>
           </Dimensions>
           <Partitions>
@@ -3060,6 +3365,45 @@
               </Attributes>
             </Dimension>
             <Dimension xsi:type="ReferenceMeasureGroupDimension">
+              <CubeDimensionID>Czas</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>ID Czasu</AttributeID>
+                  <Type>Granularity</Type>
+                </Attribute>
+              </Attributes>
+              <IntermediateCubeDimensionID>Interwencje</IntermediateCubeDimensionID>
+              <IntermediateGranularityAttributeID>ID Czasu</IntermediateGranularityAttributeID>
+              <Materialization>Regular</Materialization>
+              <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+            </Dimension>
+            <Dimension xsi:type="ReferenceMeasureGroupDimension">
+              <CubeDimensionID>Miejsce</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>ID Miejsca</AttributeID>
+                  <Type>Granularity</Type>
+                </Attribute>
+              </Attributes>
+              <IntermediateCubeDimensionID>Interwencje</IntermediateCubeDimensionID>
+              <IntermediateGranularityAttributeID>ID Miejsca</IntermediateGranularityAttributeID>
+              <Materialization>Regular</Materialization>
+              <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+            </Dimension>
+            <Dimension xsi:type="ReferenceMeasureGroupDimension">
+              <CubeDimensionID>Zdarzenia</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>ID Zdarzenia</AttributeID>
+                  <Type>Granularity</Type>
+                </Attribute>
+              </Attributes>
+              <IntermediateCubeDimensionID>Interwencje</IntermediateCubeDimensionID>
+              <IntermediateGranularityAttributeID>ID Zdarzenia</IntermediateGranularityAttributeID>
+              <Materialization>Regular</Materialization>
+              <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+            </Dimension>
+            <Dimension xsi:type="ReferenceMeasureGroupDimension">
               <CubeDimensionID>Patrole</CubeDimensionID>
               <Attributes>
                 <Attribute>
@@ -3072,45 +3416,96 @@
               <Materialization>Regular</Materialization>
               <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
             </Dimension>
-            <Dimension xsi:type="ManyToManyMeasureGroupDimension">
-              <CubeDimensionID>Opis Patrolu</CubeDimensionID>
-              <MeasureGroupID>Interwencje Fakty</MeasureGroupID>
-            </Dimension>
-            <Dimension xsi:type="ManyToManyMeasureGroupDimension">
-              <CubeDimensionID>ID Czasu Zakonczenia</CubeDimensionID>
-              <MeasureGroupID>Interwencje Fakty</MeasureGroupID>
-            </Dimension>
-            <Dimension xsi:type="ManyToManyMeasureGroupDimension">
-              <CubeDimensionID>Smieci</CubeDimensionID>
-              <MeasureGroupID>Interwencje Fakty</MeasureGroupID>
-            </Dimension>
-            <Dimension xsi:type="ManyToManyMeasureGroupDimension">
-              <CubeDimensionID>ID Czasu Rozpoczecia</CubeDimensionID>
-              <MeasureGroupID>Interwencje Fakty</MeasureGroupID>
-            </Dimension>
-            <Dimension xsi:type="ManyToManyMeasureGroupDimension">
-              <CubeDimensionID>ID Daty Zakonczenia</CubeDimensionID>
-              <MeasureGroupID>Interwencje Fakty</MeasureGroupID>
-            </Dimension>
-            <Dimension xsi:type="ManyToManyMeasureGroupDimension">
-              <CubeDimensionID>ID Daty Rozpoczecia</CubeDimensionID>
-              <MeasureGroupID>Interwencje Fakty</MeasureGroupID>
-            </Dimension>
-            <Dimension xsi:type="ManyToManyMeasureGroupDimension">
-              <CubeDimensionID>Miejsce</CubeDimensionID>
-              <MeasureGroupID>Interwencje Fakty</MeasureGroupID>
-            </Dimension>
-            <Dimension xsi:type="ManyToManyMeasureGroupDimension">
-              <CubeDimensionID>Czas</CubeDimensionID>
-              <MeasureGroupID>Interwencje Fakty</MeasureGroupID>
-            </Dimension>
-            <Dimension xsi:type="ManyToManyMeasureGroupDimension">
-              <CubeDimensionID>Zdarzenia</CubeDimensionID>
-              <MeasureGroupID>Interwencje Fakty</MeasureGroupID>
-            </Dimension>
-            <Dimension xsi:type="ManyToManyMeasureGroupDimension">
+            <Dimension xsi:type="ReferenceMeasureGroupDimension">
               <CubeDimensionID>Data</CubeDimensionID>
-              <MeasureGroupID>Interwencje Fakty</MeasureGroupID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>ID Daty</AttributeID>
+                  <Type>Granularity</Type>
+                </Attribute>
+              </Attributes>
+              <IntermediateCubeDimensionID>Interwencje</IntermediateCubeDimensionID>
+              <IntermediateGranularityAttributeID>ID Daty</IntermediateGranularityAttributeID>
+              <Materialization>Regular</Materialization>
+              <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+            </Dimension>
+            <Dimension xsi:type="ReferenceMeasureGroupDimension">
+              <CubeDimensionID>ID Czasu Rozpoczecia</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>ID Czasu</AttributeID>
+                  <Type>Granularity</Type>
+                </Attribute>
+              </Attributes>
+              <IntermediateCubeDimensionID>Patrole</IntermediateCubeDimensionID>
+              <IntermediateGranularityAttributeID>ID Czasu Rozpoczecia</IntermediateGranularityAttributeID>
+              <Materialization>Regular</Materialization>
+              <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+            </Dimension>
+            <Dimension xsi:type="ReferenceMeasureGroupDimension">
+              <CubeDimensionID>ID Daty Zakonczenia</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>ID Daty</AttributeID>
+                  <Type>Granularity</Type>
+                </Attribute>
+              </Attributes>
+              <IntermediateCubeDimensionID>Patrole</IntermediateCubeDimensionID>
+              <IntermediateGranularityAttributeID>ID Daty Zakonczenia</IntermediateGranularityAttributeID>
+              <Materialization>Regular</Materialization>
+              <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+            </Dimension>
+            <Dimension xsi:type="ReferenceMeasureGroupDimension">
+              <CubeDimensionID>Smieci</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>ID Smieci</AttributeID>
+                  <Type>Granularity</Type>
+                </Attribute>
+              </Attributes>
+              <IntermediateCubeDimensionID>Patrole</IntermediateCubeDimensionID>
+              <IntermediateGranularityAttributeID>ID Smieci</IntermediateGranularityAttributeID>
+              <Materialization>Regular</Materialization>
+              <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+            </Dimension>
+            <Dimension xsi:type="ReferenceMeasureGroupDimension">
+              <CubeDimensionID>ID Czasu Zakonczenia</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>ID Czasu</AttributeID>
+                  <Type>Granularity</Type>
+                </Attribute>
+              </Attributes>
+              <IntermediateCubeDimensionID>Patrole</IntermediateCubeDimensionID>
+              <IntermediateGranularityAttributeID>ID Czasu Zakonczenia</IntermediateGranularityAttributeID>
+              <Materialization>Regular</Materialization>
+              <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+            </Dimension>
+            <Dimension xsi:type="ReferenceMeasureGroupDimension">
+              <CubeDimensionID>Opis Patrolu</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>ID Opisu Patrolu</AttributeID>
+                  <Type>Granularity</Type>
+                </Attribute>
+              </Attributes>
+              <IntermediateCubeDimensionID>Patrole</IntermediateCubeDimensionID>
+              <IntermediateGranularityAttributeID>ID Opisu Patrolu</IntermediateGranularityAttributeID>
+              <Materialization>Regular</Materialization>
+              <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+            </Dimension>
+            <Dimension xsi:type="ReferenceMeasureGroupDimension">
+              <CubeDimensionID>ID Daty Rozpoczecia</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>ID Daty</AttributeID>
+                  <Type>Granularity</Type>
+                </Attribute>
+              </Attributes>
+              <IntermediateCubeDimensionID>Patrole</IntermediateCubeDimensionID>
+              <IntermediateGranularityAttributeID>ID Daty Rozpoczecia</IntermediateGranularityAttributeID>
+              <Materialization>Regular</Materialization>
+              <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
             </Dimension>
           </Dimensions>
           <Partitions>
@@ -3327,30 +3722,6 @@
                   <Type>Granularity</Type>
                 </Attribute>
               </Attributes>
-            </Dimension>
-            <Dimension xsi:type="ManyToManyMeasureGroupDimension">
-              <CubeDimensionID>Data</CubeDimensionID>
-              <MeasureGroupID>Interwencje Fakty</MeasureGroupID>
-            </Dimension>
-            <Dimension xsi:type="ManyToManyMeasureGroupDimension">
-              <CubeDimensionID>Interwencje</CubeDimensionID>
-              <MeasureGroupID>Interwencje Fakty</MeasureGroupID>
-            </Dimension>
-            <Dimension xsi:type="ManyToManyMeasureGroupDimension">
-              <CubeDimensionID>Notowani</CubeDimensionID>
-              <MeasureGroupID>Kary Fakty</MeasureGroupID>
-            </Dimension>
-            <Dimension xsi:type="ManyToManyMeasureGroupDimension">
-              <CubeDimensionID>Opis Kary</CubeDimensionID>
-              <MeasureGroupID>Kary Fakty</MeasureGroupID>
-            </Dimension>
-            <Dimension xsi:type="ManyToManyMeasureGroupDimension">
-              <CubeDimensionID>Zdarzenia</CubeDimensionID>
-              <MeasureGroupID>Interwencje Fakty</MeasureGroupID>
-            </Dimension>
-            <Dimension xsi:type="ManyToManyMeasureGroupDimension">
-              <CubeDimensionID>Czas</CubeDimensionID>
-              <MeasureGroupID>Interwencje Fakty</MeasureGroupID>
             </Dimension>
           </Dimensions>
           <Partitions>

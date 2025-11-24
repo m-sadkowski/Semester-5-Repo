@@ -7,9 +7,9 @@ GO
 CREATE VIEW vETL_Zdarzenia
 AS
 SELECT DISTINCT
-    CAST(LEFT(LTRIM(RTRIM(z.Kategoria)), 20) AS VARCHAR(20)) AS Kategoria,
-	CAST(LEFT(LTRIM(RTRIM(z.Rodzaj)), 50) AS VARCHAR(50)) AS Rodzaj,
-	CAST(LEFT(LTRIM(RTRIM(ISNULL(zd.Warunki_pogodowe, 'Brak danych'))), 50) AS VARCHAR(50)) AS Warunki_pogodowe
+    z.Kategoria AS Kategoria,
+	z.Rodzaj AS Rodzaj,
+	ISNULL(zd.Warunki_pogodowe, 'Brak danych') AS Warunki_pogodowe
 FROM dane_do_hurtowni.dbo.Zdarzenia z
 LEFT JOIN dane_do_hurtowni.dbo.Zdarzenia_drogowe zd 
     ON z.ID_zdarzenia = zd.FK_Zdarzenia
