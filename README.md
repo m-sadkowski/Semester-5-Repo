@@ -37,6 +37,16 @@ Topics covered:
 - **OLAP Processing:** Concepts and principles of Online Analytical Processing.
 - **Managerial Dashboards:** Creation and use of dashboards for decision support.
 
+### 3. Internet Services Architectures
+Topics covered:
+- **Java SE Advanced Features:** Practical usage of Stream API, lambda expressions, serialization, and multithreading (custom thread pools).
+- **Spring Framework Ecosystem:** Core concepts including Dependency Injection (DI) and Inversion of Control (IoC) using Spring Boot.
+- **Data Persistence (ORM):** Database access using Spring Data JPA, Hibernate, and repository pattern implementation.
+- **RESTful Web Services:** Designing and implementing REST APIs with Spring MVC, controller architecture, and Data Transfer Objects (DTO).
+- **Microservices Architecture:** Decomposition of monolithic applications into microservices, event-based communication, and routing with Spring Cloud Gateway.
+- **Frontend Development:** Developing Single Page Applications (SPA) using Angular framework, component-based architecture, and service consumption.
+- **Containerization:** Containerizing applications using Docker, configuring NGINX as a reverse proxy, and orchestration with Docker Compose.
+
 ## Usage
 Each folder contains source code, documentation, and other relevant materials for the respective subject. Explore each directory for further details on projects and implementations.
 
