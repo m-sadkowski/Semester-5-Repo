@@ -7,17 +7,16 @@ GO
 CREATE VIEW vETL_Notowani
 AS
 SELECT DISTINCT
-    CAST(LTRIM(RTRIM(Pesel)) AS VARCHAR(11)) AS Pesel,
-    CAST(LEFT(LTRIM(RTRIM(Imie)) + ' ' + LTRIM(RTRIM(Nazwisko)), 60) AS VARCHAR(60)) AS Imie_nazwisko,
+    Pesel AS Pesel,
+    Imie + ' ' + Nazwisko AS Imie_nazwisko,
     CAST(Data_urodzenia AS DATE) AS Data_urodzenia,
-    CAST(LEFT(LTRIM(RTRIM(Plec)), 1) AS VARCHAR(1)) AS Plec
+    LEFT(Plec, 1) AS Plec
 FROM dane_do_hurtowni.dbo.Notowani
-WHERE Pesel IS NOT NULL;
 GO
 
 DECLARE @DataLadowania DATE = GETDATE();
 
-UPDATE TT
+UPDATE TT -- ustawia osoby ktorym zmienilo sie nazwisko na nieaktualne
 SET 
     TT.CzyAktualny = 0,
     TT.DataWaznosciDo = @DataLadowania
@@ -25,13 +24,9 @@ FROM dbo.Notowani TT
 JOIN vETL_Notowani ST ON TT.Pesel = ST.Pesel
 WHERE 
     TT.CzyAktualny = 1
-    AND (
-        TT.Imie_nazwisko <> ST.Imie_nazwisko
-        OR TT.Plec <> ST.Plec
-        OR TT.Data_urodzenia <> ST.Data_urodzenia
-    );
-
-INSERT INTO dbo.Notowani (
+    AND TT.Imie_nazwisko != ST.Imie_nazwisko
+	
+INSERT INTO dbo.Notowani ( -- wstawia kazdego kto nie ma peselu (nowi) lub jest nieaktualny
     Pesel,
     Imie_nazwisko,
     Data_urodzenia,

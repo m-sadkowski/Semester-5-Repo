@@ -1,3 +1,6 @@
+USE baza
+GO
+
 DECLARE @Godzina INT = 0;
 
 WHILE @Godzina < 24

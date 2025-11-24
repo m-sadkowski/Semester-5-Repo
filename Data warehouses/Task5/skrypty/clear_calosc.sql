@@ -1,3 +1,6 @@
+USE baza
+GO
+
 EXEC sp_MSforeachtable 'ALTER TABLE ? NOCHECK CONSTRAINT ALL';
 GO
 
