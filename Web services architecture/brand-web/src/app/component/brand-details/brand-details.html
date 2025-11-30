@@ -1,0 +1,50 @@
+<div *ngIf="brand">
+  
+  <div>
+    <a routerLink="/">
+      ← Powrót do listy marek
+    </a>
+  </div>
+
+  <h1>{{ brand.name }} ({{ brand.country }})</h1>
+
+  <hr>
+  <table *ngIf="models.length > 0; else noModels">
+    <thead>
+      <tr>
+        <th>Model</th>
+        <th>Rocznik</th>
+        <th>Silnik</th>
+        <th>Akcje</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let model of models">
+        <td>
+          <a [routerLink]="['/brand', brand.id, 'model', model.id]">
+            {{ model.name }}
+          </a>
+        </td>
+        <td>{{ model.year }}</td>
+        <td>{{ model.engine }} L</td>
+        <td>
+          <button [routerLink]="['/brand', brand.id, 'model', model.id, 'edit']">
+            Edytuj
+          </button>
+          <button (click)="deleteModel(model)">
+            Usuń
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <ng-template #noModels>
+    <p>Ta marka nie posiada jeszcze zdefiniowanych modeli.</p>
+  </ng-template>
+
+  <br>
+  <button [routerLink]="['/brand', brand.id, 'model', 'create']">
+    + Dodaj nowy model
+  </button>
+</div>

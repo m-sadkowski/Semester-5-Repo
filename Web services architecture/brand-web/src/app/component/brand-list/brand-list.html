@@ -1,0 +1,46 @@
+<h1>Katalog marek</h1>
+<hr>
+
+<div *ngIf="brands$ | async as brands; else loading">
+  <table>
+    <thead>
+      <tr>
+        <th>Nazwa</th>
+        <th>Kraj Pochodzenia</th>
+        <th>Akcje</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let brand of brands">
+        <td>
+          <a [routerLink]="['/brand', brand.id]">
+            {{ brand.name }}
+          </a>
+        </td>
+        <td>{{ brand.country }}</td>
+        <td>
+          <button [routerLink]="['/brand', brand.id, 'edit']">
+            Edytuj
+          </button>
+          <button (click)="deleteBrand(brand)">
+            Usuń
+          </button>
+        </td>
+      </tr>
+      <tr *ngIf="brands.length === 0">
+        <td colspan="3">
+          Brak marek w bazie danych. Dodaj pierwszą markę.
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<ng-template #loading>
+  <p>Ładowanie danych...</p>
+</ng-template>
+
+<br>
+<button routerLink="/create">
+  + Dodaj nową markę
+</button>

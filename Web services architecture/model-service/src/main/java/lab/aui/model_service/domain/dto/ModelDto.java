@@ -13,6 +13,7 @@ public class ModelDto implements Comparable<ModelDto> {
     private final int year;
     private final double engine;
     private final String brandName;
+    private final UUID brandId;
 
     @Override
     public int compareTo(ModelDto other) {

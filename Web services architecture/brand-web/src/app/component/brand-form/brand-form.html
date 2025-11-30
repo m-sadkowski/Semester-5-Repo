@@ -1,0 +1,26 @@
+<h3>
+  {{ isEditMode ? 'Edycja marki' : 'Tworzenie nowej marki' }}
+</h3>
+
+<form (ngSubmit)="onSubmit()">
+  
+  <div>
+    <label for="name">Nazwa marki:</label>
+    <input type="text" id="name" required [(ngModel)]="brand.name" name="name">
+  </div>
+  <br>
+  <div>
+    <label for="country">Kraj pochodzenia:</label>
+    <input type="text" id="country" required [(ngModel)]="brand.country" name="country">
+  </div>
+  <br>
+  <div>
+    <button routerLink="/">
+      Anuluj
+    </button>
+    <button type="submit">
+      {{ isEditMode ? 'Zapisz zmiany' : 'Utwórz markę' }}
+    </button>
+  </div>
+  
+</form>

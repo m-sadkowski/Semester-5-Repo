@@ -1,0 +1,21 @@
+<div *ngIf="model">
+  
+  <div>
+    <a [routerLink]="['/brand', brandId]">
+      ← Powrót do marki
+    </a>
+  </div>
+
+  <h1>{{ model.brandName}} {{ model.name }}</h1>
+
+  <hr>
+
+  <p>Rok produkcji: {{ model.year }}</p> 
+  <p>Pojemność silnika: {{ model.engine }}</p>
+  <p>ID: {{ model.id }}</p>
+
+  <button [routerLink]="['/brand', brandId, 'model', model.id, 'edit']">
+    Edytuj model
+  </button>
+
+</div>
