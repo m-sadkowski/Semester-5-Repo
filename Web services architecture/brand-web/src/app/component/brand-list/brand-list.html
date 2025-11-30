@@ -1,0 +1,50 @@
+<div class="container mt-4">
+  <h2>Lista Marek</h2>
+  
+  <div class="mb-3">
+    <a routerLink="/create" class="btn btn-success">Dodaj nową markę</a>
+  </div>
+
+  <div *ngIf="brands$ | async as brands; else loading">
+    
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Nazwa</th>
+          <th>Kraj</th>
+          <th>Akcje</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let brand of brands">
+          <td>
+            <a [routerLink]="['/brand', brand.id]" style="text-decoration: none; font-weight: bold; color: #007bff;">
+              {{ brand.name }}
+            </a>
+          </td>
+          <td>{{ brand.country }}</td>
+          <td>
+            <a [routerLink]="['/brand', brand.id, 'edit']" class="btn btn-warning btn-sm me-2">
+              Edytuj
+            </a>
+            <button (click)="deleteBrand(brand)" class="btn btn-danger btn-sm">
+              Usuń
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div *ngIf="brands.length === 0" class="alert alert-info">
+      Brak marek w bazie danych.
+    </div>
+
+  </div>
+
+  <ng-template #loading>
+    <div class="alert alert-secondary">
+      Ładowanie danych z serwera...
+    </div>
+  </ng-template>
+
+</div>

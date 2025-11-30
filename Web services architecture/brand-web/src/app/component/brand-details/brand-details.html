@@ -1,0 +1,47 @@
+<div class="container mt-4" *ngIf="brand">
+  <div class="card mb-4">
+    <div class="card-body">
+      <h2 class="card-title">{{ brand.name }}</h2>
+      <h6 class="card-subtitle mb-2 text-muted">Kraj: {{ brand.country }}</h6>
+      <a routerLink="/" class="btn btn-outline-secondary btn-sm mt-2">Wróć do listy marek</a>
+    </div>
+  </div>
+
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <h3>Modele</h3>
+    <a [routerLink]="['/brand', brand.id, 'model', 'create']" class="btn btn-success">
+      Dodaj nowy model
+    </a>
+  </div>
+  <hr>
+  
+  <table class="table table-striped" *ngIf="models.length > 0; else noModels">
+    <thead>
+      <tr>
+        <th>Nazwa</th>
+        <th>Rocznik</th>
+        <th>Silnik</th>
+        <th>Akcje</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let model of models">
+        <td>{{ model.name }}</td>
+        <td>{{ model.year }}</td>
+        <td>{{ model.engine }}</td>
+        <td>
+          <a [routerLink]="['/brand', brand.id, 'model', model.id, 'edit']" class="btn btn-warning btn-sm me-2">
+            Edytuj
+          </a>
+          <button (click)="deleteModel(model)" class="btn btn-danger btn-sm">Usuń</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <ng-template #noModels>
+    <div class="alert alert-warning">
+      Ta marka nie ma jeszcze żadnych modeli.
+    </div>
+  </ng-template>
+</div>

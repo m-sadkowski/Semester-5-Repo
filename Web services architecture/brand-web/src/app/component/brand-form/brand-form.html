@@ -1,0 +1,27 @@
+<div class="container mt-4">
+  <h2>{{ isEditMode ? 'Edytuj markę' : 'Dodaj nową markę' }}</h2>
+  <hr>
+  
+  <form (ngSubmit)="onSubmit()">
+    
+    <div class="mb-3">
+      <label for="name" class="form-label">Nazwa:</label>
+      <input type="text" id="name" required 
+             [(ngModel)]="brand.name" name="name" 
+             class="form-control">
+    </div>
+
+    <div class="mb-3">
+      <label for="country" class="form-label">Kraj:</label>
+      <input type="text" id="country" required 
+             [(ngModel)]="brand.country" name="country" 
+             class="form-control">
+    </div>
+
+    <button type="submit" class="btn btn-primary">
+      {{ isEditMode ? 'Zapisz zmiany' : 'Utwórz' }}
+    </button>
+    
+    <a routerLink="/" class="btn btn-secondary ms-2">Anuluj</a>
+  </form>
+</div>
