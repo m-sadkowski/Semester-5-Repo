@@ -1,34 +1,26 @@
-<div class="container mt-5 d-flex justify-content-center">
-  <div class="card shadow-lg border-0" style="max-width: 600px; width: 100%;">
-    <div class="card-body p-5">
-      
-      <h3 class="card-title mb-5 text-center fw-bold">
-        {{ isEditMode ? 'Edycja Marki' : 'Tworzenie Nowej Marki' }}
-      </h3>
-      
-      <form (ngSubmit)="onSubmit()">
-        
-        <div class="form-floating mb-4">
-          <input type="text" id="name" required [(ngModel)]="brand.name" name="name" class="form-control form-control-lg" placeholder="Nazwa">
-          <label for="name">Nazwa marki</label>
-        </div>
+<h3>
+  {{ isEditMode ? 'Edycja marki' : 'Tworzenie nowej marki' }}
+</h3>
 
-        <div class="form-floating mb-5">
-          <input type="text" id="country" required [(ngModel)]="brand.country" name="country" class="form-control form-control-lg" placeholder="Kraj">
-          <label for="country">Kraj pochodzenia</label>
-        </div>
-
-        <div class="d-grid gap-3">
-          <button type="submit" class="btn btn-primary btn-lg py-3">
-            {{ isEditMode ? 'Zapisz zmiany' : 'Utwórz markę' }}
-          </button>
-          
-          <button routerLink="/" class="btn btn-light btn-lg text-muted">
-            Anuluj
-          </button>
-        </div>
-        
-      </form>
-    </div>
+<form (ngSubmit)="onSubmit()">
+  
+  <div>
+    <label for="name">Nazwa marki:</label>
+    <input type="text" id="name" required [(ngModel)]="brand.name" name="name">
   </div>
-</div>
+  <br>
+  <div>
+    <label for="country">Kraj pochodzenia:</label>
+    <input type="text" id="country" required [(ngModel)]="brand.country" name="country">
+  </div>
+  <br>
+  <div>
+    <button routerLink="/">
+      Anuluj
+    </button>
+    <button type="submit">
+      {{ isEditMode ? 'Zapisz zmiany' : 'Utwórz markę' }}
+    </button>
+  </div>
+  
+</form>

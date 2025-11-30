@@ -1,50 +1,46 @@
-<div class="text-center mb-5">
-    <h2 class="fw-bold mb-4">Katalog Marek</h2>
-    
-    <button routerLink="/create" class="btn btn-primary btn-lg px-5 shadow-sm">
-      Dodaj nową markę
-    </button>
+<h1>Katalog marek</h1>
+<hr>
 
-  <div *ngIf="brands$ | async as brands; else loading">
-    
-    <table class="table table-bordered">
-      <thead>
-        <tr>
-          <th>Nazwa</th>
-          <th>Kraj</th>
-          <th>Akcje</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let brand of brands">
-          <td>
-            <a [routerLink]="['/brand', brand.id]" style="text-decoration: none; font-weight: bold; color: #007bff;">
-              {{ brand.name }}
-            </a>
-          </td>
-          <td>{{ brand.country }}</td>
-          <td>
-            <a [routerLink]="['/brand', brand.id, 'edit']" class="btn btn-warning btn-sm me-2">
-              Edytuj
-            </a>
-            <button (click)="deleteBrand(brand)" class="btn btn-danger btn-sm">
-              Usuń
-            </button>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-
-    <div *ngIf="brands.length === 0" class="alert alert-info">
-      Brak marek w bazie danych.
-    </div>
-
-  </div>
-
-  <ng-template #loading>
-    <div class="alert alert-secondary">
-      Ładowanie danych z serwera...
-    </div>
-  </ng-template>
-
+<div *ngIf="brands$ | async as brands; else loading">
+  <table>
+    <thead>
+      <tr>
+        <th>Nazwa</th>
+        <th>Kraj Pochodzenia</th>
+        <th>Akcje</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let brand of brands">
+        <td>
+          <a [routerLink]="['/brand', brand.id]">
+            {{ brand.name }}
+          </a>
+        </td>
+        <td>{{ brand.country }}</td>
+        <td>
+          <button [routerLink]="['/brand', brand.id, 'edit']">
+            Edytuj
+          </button>
+          <button (click)="deleteBrand(brand)">
+            Usuń
+          </button>
+        </td>
+      </tr>
+      <tr *ngIf="brands.length === 0">
+        <td colspan="3">
+          Brak marek w bazie danych. Dodaj pierwszą markę.
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
+
+<ng-template #loading>
+  <p>Ładowanie danych...</p>
+</ng-template>
+
+<br>
+<button routerLink="/create">
+  + Dodaj nową markę
+</button>

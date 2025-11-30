@@ -1,62 +1,50 @@
-<div class="container mt-5" *ngIf="brand">
+<div *ngIf="brand">
   
-  <div class="card mb-5 border-0 shadow-sm text-center">
-    <div class="card-body p-5">
-      <h1 class="display-5 fw-bold mb-3">{{ brand.name }}</h1>
-      <h4 class="text-muted mb-4">{{ brand.country }}</h4>
-      
-      <button routerLink="/" class="btn btn-outline-secondary px-4">
-        Powrót do listy
-      </button>
-    </div>
+  <div>
+    <a routerLink="/">
+      ← Powrót do listy marek
+    </a>
   </div>
 
-  <div class="card shadow-sm border-0">
-    <div class="card-header bg-white py-4 text-center">
-      <h3 class="mb-4">Dostępne Modele</h3>
-      <button [routerLink]="['/brand', brand.id, 'model', 'create']" class="btn btn-success px-4 py-2">
-        Dodaj nowy model
-      </button>
-    </div>
+  <h1>{{ brand.name }} ({{ brand.country }})</h1>
 
-    <div class="card-body p-4">
-      <table class="table table-hover mb-0 text-center align-middle" *ngIf="models.length > 0; else noModels">
-        <thead class="table-light">
-          <tr>
-            <th class="py-3">Nazwa Modelu</th>
-            <th class="py-3">Rocznik</th>
-            <th class="py-3">Silnik</th>
-            <th class="py-3">Zarządzaj</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let model of models">
-            <td class="py-3">
-              <a [routerLink]="['/brand', brand.id, 'model', model.id]" class="fw-bold text-decoration-none fs-5">
-                {{ model.name }}
-              </a>
-            </td>
-            <td class="py-3">{{ model.year }}</td>
-            <td class="py-3">{{ model.engine }} L</td>
-            <td class="py-3">
-              <div class="d-flex justify-content-center gap-2">
-                <button [routerLink]="['/brand', brand.id, 'model', model.id, 'edit']" class="btn btn-sm btn-light border px-3">
-                  Edytuj
-                </button>
-                <button (click)="deleteModel(model)" class="btn btn-sm btn-danger px-3">
-                  Usuń
-                </button>
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+  <hr>
+  <table *ngIf="models.length > 0; else noModels">
+    <thead>
+      <tr>
+        <th>Model</th>
+        <th>Rocznik</th>
+        <th>Silnik</th>
+        <th>Akcje</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let model of models">
+        <td>
+          <a [routerLink]="['/brand', brand.id, 'model', model.id]">
+            {{ model.name }}
+          </a>
+        </td>
+        <td>{{ model.year }}</td>
+        <td>{{ model.engine }} L</td>
+        <td>
+          <button [routerLink]="['/brand', brand.id, 'model', model.id, 'edit']">
+            Edytuj
+          </button>
+          <button (click)="deleteModel(model)">
+            Usuń
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 
-      <ng-template #noModels>
-        <div class="text-center py-5">
-          <p class="text-muted fs-5">Ta marka nie posiada jeszcze zdefiniowanych modeli.</p>
-        </div>
-      </ng-template>
-    </div>
-  </div>
+  <ng-template #noModels>
+    <p>Ta marka nie posiada jeszcze zdefiniowanych modeli.</p>
+  </ng-template>
+
+  <br>
+  <button [routerLink]="['/brand', brand.id, 'model', 'create']">
+    + Dodaj nowy model
+  </button>
 </div>
