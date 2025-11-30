@@ -31,4 +31,14 @@ public class BrandController {
         modelRepository.deleteAll(models);
         brandRepository.deleteById(id);
     }
+
+    @PutMapping("/{id}")
+    public void updateBrand(@PathVariable UUID id, @RequestBody Brand brand) {
+        Brand existingBrand = brandRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Brand not found in Model Service sync"));
+
+        existingBrand.setName(brand.getName());
+
+        brandRepository.save(existingBrand);
+    }
 }

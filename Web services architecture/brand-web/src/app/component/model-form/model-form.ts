@@ -30,27 +30,37 @@ export class ModelFormComponent implements OnInit {
 
   ngOnInit(): void {
     this.brandId = this.route.snapshot.params['brandId'];
-    this.model.brandId = this.brandId;
+    this.model.brandId = this.brandId; 
 
     const modelId = this.route.snapshot.params['modelId'];
+    
     if (modelId) {
       this.isEditMode = true;
-      this.modelService.getModel(modelId).subscribe(data => {
-        this.model = data;
-        this.model.brandId = this.brandId; 
+      this.modelService.getModel(modelId).subscribe({
+        next: (data) => {
+          this.model = data;
+          this.model.brandId = this.brandId;
+        },
+        error: (err) => console.error(err)
       });
     }
   }
 
   onSubmit(): void {
+    this.model.brandId = this.brandId;
+
     if (this.isEditMode) {
       this.modelService.updateModel(this.model.id, this.model).subscribe(() => {
-        this.router.navigate(['/brand', this.brandId]);
+        this.goBack();
       });
     } else {
       this.modelService.createModel(this.model).subscribe(() => {
-        this.router.navigate(['/brand', this.brandId]);
+        this.goBack();
       });
     }
+  }
+
+  goBack(): void {
+    this.router.navigate(['/brand', this.brandId]);
   }
 }

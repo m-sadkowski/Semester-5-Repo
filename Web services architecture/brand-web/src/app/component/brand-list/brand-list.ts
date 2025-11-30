@@ -24,6 +24,10 @@ export class BrandListComponent implements OnInit {
   }
 
   deleteBrand(brand: Brand): void {
+    if (!confirm(`Czy na pewno chcesz usunąć markę ${brand.name}?`)) {
+      return;
+    }
+
     this.brandService.deleteBrand(brand.id).subscribe(() => {
       this.fetchBrands();
     });

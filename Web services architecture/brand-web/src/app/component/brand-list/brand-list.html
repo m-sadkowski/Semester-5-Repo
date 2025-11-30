@@ -1,9 +1,9 @@
-<div class="container mt-4">
-  <h2>Lista Marek</h2>
-  
-  <div class="mb-3">
-    <a routerLink="/create" class="btn btn-success">Dodaj nową markę</a>
-  </div>
+<div class="text-center mb-5">
+    <h2 class="fw-bold mb-4">Katalog Marek</h2>
+    
+    <button routerLink="/create" class="btn btn-primary btn-lg px-5 shadow-sm">
+      Dodaj nową markę
+    </button>
 
   <div *ngIf="brands$ | async as brands; else loading">
     

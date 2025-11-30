@@ -5,6 +5,7 @@ import lab.aui.brand_service.dto.BrandDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.UUID;
@@ -42,6 +43,19 @@ public class BrandService {
         brandRepository.save(brand);
         restTemplate.postForLocation("http://localhost:8082/api/brands", brand);
         return BrandMapper.toDto(brand);
+    }
+
+    @Transactional
+    public void update(UUID id, CreateBrandCommand command) {
+        Brand brand = brandRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException(String.format("Brand with id %s not found", id)));
+
+        brand.setName(command.getName());
+        brand.setCountry(command.getCountry());
+
+        brandRepository.save(brand);
+
+        restTemplate.put("http://localhost:8082/api/brands/" + id, brand);
     }
 
     public void delete(UUID id) {

@@ -16,6 +16,7 @@ class ModelMapper {
                 .year(model.getYear())
                 .engine(model.getEngine())
                 .brandName(model.getBrand().getName())
+                .brandId(model.getBrand().getId())
                 .build();
     }
 

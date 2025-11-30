@@ -41,5 +41,6 @@ public class BrandController {
 
     @PutMapping("/{id}")
     public void updateBrand(@PathVariable UUID id, @RequestBody CreateBrandCommand command) {
+        brandService.update(id, command);
     }
 }
