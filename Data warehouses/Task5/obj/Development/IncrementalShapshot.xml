@@ -8,7 +8,7 @@
     <TransactionalDeployment>false</TransactionalDeployment>
     <PartitionDeployment>DeployPartitions</PartitionDeployment>
     <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
-    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <ProcessingOption>Default</ProcessingOption>
     <OutputScript></OutputScript>
     <ImpactAnalysisFile></ImpactAnalysisFile>
     <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
@@ -26,7 +26,7 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.DataSourceView</Type>
-        <TimeStamp>qK3EN2YIBcHmzjOZ2FfInx6B3c0=11/16/2025 12:48:13 PM11/23/2025 1:36:29 AM</TimeStamp>
+        <TimeStamp>aQm/j+satRwEcRnJ73Ioj/2BpTI=11/26/2025 7:48:16 PM11/23/2025 1:36:29 AM</TimeStamp>
         <ID>
           <String>policjaHDview</String>
         </ID>
@@ -68,7 +68,7 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>/6nlYrifphQ6JK4UMmQXIfW/+2Q=11/10/2025 9:42:59 PM11/23/2025 1:36:29 AM</TimeStamp>
+        <TimeStamp>0s0XnnvKfDf907bSy/pFX9Rd5qI=11/26/2025 7:48:55 PM11/23/2025 1:36:29 AM</TimeStamp>
         <ID>
           <String>Notowani</String>
         </ID>
@@ -103,7 +103,7 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>TD0jY9uy2/EtL/Zlyu+ZAQN9uI0=11/23/2025 2:00:51 AM11/23/2025 1:36:29 AMs7Ug9lSC5ntpFbgMmvxveZ5TrhM=11/10/2025 11:49:15 PM11/23/2025 1:36:29 AM</TimeStamp>
+        <TimeStamp>hjHvvuG0ReIKX85RUvfI+FLMK38=11/26/2025 7:48:55 PM11/23/2025 1:36:29 AMs7Ug9lSC5ntpFbgMmvxveZ5TrhM=11/10/2025 11:49:15 PM11/23/2025 1:36:29 AM</TimeStamp>
         <ID>
           <String>policjaHDview</String>
         </ID>
@@ -120,5 +120,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2025-11-23T01:00:55.796667Z</LastDeployed>
+  <LastDeployed>2025-11-26T18:49:09.973333Z</LastDeployed>
 </DeploymentSnapshot>

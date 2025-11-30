@@ -1,4 +1,4 @@
-﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="de239056-f423-4b08-a7ad-8200e6be6432" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="45c97577-ccd9-4217-ab9b-507575f79aff" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>policjaHDview</ID>
   <Name>policjaHDview</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="54" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3800" scrolltop="10427" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="20770" y="14076" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="54" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3800" scrolltop="10427" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="26194" y="14076" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -483,384 +483,393 @@
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
   <Dimensions>
-    <Dimension dwd:design-time-name="0c5da82a-0908-4278-a3e6-2448c43d3c94">
+    <Dimension dwd:design-time-name="967179b5-22a8-429d-8881-cdc0a8c7f1ac">
       <ID>Miejsce</ID>
       <Name>Miejsce</Name>
       <DimensionID>Miejsce</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="bb1f900a-7697-40af-9719-51bf0b144c7e">
+        <Attribute dwd:design-time-name="b88889e9-409f-4b92-944e-4aa8cf8b1cd5">
           <AttributeID>ID Miejsca</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="ebfd38d3-8c7e-4033-b3ad-c5451ac5111b">
+        <Attribute dwd:design-time-name="717314df-474f-48df-af61-837334a8ad0e">
           <AttributeID>Dzielnica</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
-    <Dimension dwd:design-time-name="6a7de5f5-b87c-4df4-918d-4bbf9a4c78b9">
+    <Dimension dwd:design-time-name="40d28aa9-8928-4b94-9460-ef0502866bd8">
       <ID>Czas</ID>
       <Name>Czas</Name>
       <DimensionID>Czas</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="2b594dae-4b4c-46a3-a6e9-21b8830a5e38">
+        <Attribute dwd:design-time-name="b7a5738d-1442-4248-a5f3-964d0d2f2e81">
           <AttributeID>ID Czasu</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="a9019770-e7e4-4bad-9dca-1f354084ff39">
+        <Attribute dwd:design-time-name="dacd3584-fab0-4b85-a308-8a2c85c625e3">
           <AttributeID>Godzina</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="b6f2cbf3-ed4a-4007-896d-2375ca39ba89">
+        <Attribute dwd:design-time-name="be68b649-374d-4c31-a4cc-437e2b3ea080">
           <AttributeID>Pora Dnia</AttributeID>
         </Attribute>
       </Attributes>
       <Hierarchies>
-        <Hierarchy dwd:design-time-name="06e2f781-0cac-4bd1-bb3e-61c6548d2972">
+        <Hierarchy dwd:design-time-name="f73f88c4-ee3a-4157-a968-1be712acb6f0">
           <HierarchyID>Hierarchy</HierarchyID>
         </Hierarchy>
       </Hierarchies>
     </Dimension>
-    <Dimension dwd:design-time-name="5ddd35cd-a341-4be4-98be-1412e3582365">
+    <Dimension dwd:design-time-name="1e079b95-0bc0-42c8-b16f-d3262d9ab78d">
       <ID>Zdarzenia</ID>
       <Name>Zdarzenia</Name>
       <DimensionID>Zdarzenia</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="b803f574-618d-482b-a120-b8f197c76c54">
+        <Attribute dwd:design-time-name="72a037bb-d096-48d2-8b7b-181ebcdea49a">
           <AttributeID>ID Zdarzenia</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="ef576c0b-83a4-46f5-84f1-36aa0c921fcf">
+        <Attribute dwd:design-time-name="77803f77-eb65-4fcf-bc7d-1e7e20b95ec4">
           <AttributeID>Kategoria</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="a01cf232-f3da-4a14-a621-69da162186bf">
+        <Attribute dwd:design-time-name="cafa1f12-eb92-4b23-bf8c-40674575edb1">
           <AttributeID>Rodzaj</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="9f1690ff-9ff2-43bf-940a-b0608149c0e4">
+        <Attribute dwd:design-time-name="79efb073-0a07-4440-84e7-b739304d0b2e">
           <AttributeID>Warunki Pogodowe</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
-    <Dimension dwd:design-time-name="71879376-93a4-4fee-94f2-6c15df1c3cb8">
+    <Dimension dwd:design-time-name="5502e998-fd1d-4f60-9752-5a3a2339d2ab">
       <ID>Opis Kary</ID>
       <Name>Opis Kary</Name>
       <DimensionID>Opis Kary</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="3d0a224e-cebb-44d4-9fc5-3f8f805b6ba6">
+        <Attribute dwd:design-time-name="0801820d-f1b1-4824-8fb9-0d219ad4238d">
           <AttributeID>ID Opisu Kary</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="a0b05e16-ef5d-45ef-8493-ff7a0d7536c2">
+        <Attribute dwd:design-time-name="d6b61691-80a0-4b68-95c6-eacce1ad6e2c">
           <AttributeID>Rodzaj</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="d71dbc98-241c-4ef5-9aa3-bca600d8283d">
+        <Attribute dwd:design-time-name="1847e1f2-72fb-4f48-8284-37885df0d937">
           <AttributeID>Nr Sprawy</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="96321184-2868-46d3-8710-1843c9157d99">
+        <Attribute dwd:design-time-name="bb3942c8-7eda-4f10-b77d-b9b0b9542ac0">
           <AttributeID>Podstawa Prawna</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="35a8e42b-065b-4498-bb08-1c740c0dfea8">
+        <Attribute dwd:design-time-name="fa7d6254-e8d3-4827-b4dc-4551bbe32a0b">
           <AttributeID>Czy Przyjeta</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="ead17661-3233-4b78-b9e9-e58d02a2a805">
+        <Attribute dwd:design-time-name="7d92e31f-9c2d-47b9-bc85-e7a700db32b7">
           <AttributeID>Seria Numer Mandatu</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="a5339c73-6944-432f-8c38-413b119e4c75">
+        <Attribute dwd:design-time-name="ad1d2eed-9c9b-4ccc-9b63-22fe715ca722">
           <AttributeID>Forma</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="d9b740cb-1df6-47a0-bb6b-7f99e06ffe08">
+        <Attribute dwd:design-time-name="c43618f6-1d86-459d-b996-6482e617eae7">
           <AttributeID>Nazwa Sadu</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="588e3505-c478-4266-888c-2b17dc406d2e">
+        <Attribute dwd:design-time-name="cf7099d0-2ef2-418a-85aa-a0bd02dd2c8f">
           <AttributeID>Sygnatura Akt</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="08d026a0-2292-4c0b-b09c-3fda6d43f7b8">
+        <Attribute dwd:design-time-name="036b8f4d-ce7c-42d0-a70b-5ef2fb1dbaa1">
           <AttributeID>Rodzaj Wniosku</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
-    <Dimension dwd:design-time-name="9d526b96-c1e2-4d35-b1fa-264c3c58c874">
+    <Dimension dwd:design-time-name="45190729-8e4e-4002-9c40-d1d53a3d43c0">
       <ID>Notowani</ID>
       <Name>Notowani</Name>
       <DimensionID>Notowani</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="52d2084b-ea1f-490f-b787-739a460bfdff">
+        <Attribute dwd:design-time-name="ba0b157c-d0ef-40ed-9dfb-cd08c050033c">
           <AttributeID>ID Notowanego</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="be15a65c-4fe5-4a92-94b9-52f8ceed46ed">
+        <Attribute dwd:design-time-name="338fd714-1395-4a1b-a4bb-2dc721055e08">
           <AttributeID>Pesel</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="c4754387-1e73-46fc-9ec3-51b2f52d0cb3">
+        <Attribute dwd:design-time-name="67d75a48-8af9-4e1d-8e41-90b76b9115fd">
           <AttributeID>Imie Nazwisko</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="abf3472f-a4ff-48ca-bbff-bb25f519ad68">
+        <Attribute dwd:design-time-name="3c075604-78ec-44ba-98f6-5e3bdc6c7ff3">
           <AttributeID>Data Urodzenia</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="636629bf-7cd0-4637-b08c-8c7ff09d1411">
+        <Attribute dwd:design-time-name="971f9989-844f-47ce-80f2-a8f62f462b39">
           <AttributeID>Plec</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="26fa222e-607b-4db2-bfb2-368a59583798">
+          <AttributeID>Data Waznosci Od</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f5c65d97-23e7-44f6-9bdb-6a55880ddbe0">
+          <AttributeID>Data Waznosci Do</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6af0ee95-c1b2-4c36-8198-56802ced7d66">
+          <AttributeID>Czy Aktualny</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
-    <Dimension dwd:design-time-name="c7d4906f-0bca-4318-aa5c-864c6a72cadd">
+    <Dimension dwd:design-time-name="63d4d046-1c2c-4c24-8305-4198e652ce63">
       <ID>ID Daty Rozpoczecia</ID>
       <Name>ID Daty Rozpoczecia</Name>
       <DimensionID>Data</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="6f214c04-0c25-4f36-877b-c43ab57ea61b">
+        <Attribute dwd:design-time-name="15739d85-cfb2-4c8a-99ac-7e5034c86aa9">
           <AttributeID>ID Daty</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="2da90000-4856-4dfe-90ac-bc78a111878f">
+        <Attribute dwd:design-time-name="11d4c39a-4ae8-40ef-8b7b-e2492634bcfb">
           <AttributeID>Data</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="556172dd-e215-41f9-a669-1e77a5d7fa2e">
+        <Attribute dwd:design-time-name="c256e093-71f7-4faa-bbe2-e93b17ae192d">
           <AttributeID>Rok</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="b85cd3bd-db49-4138-804d-67864b47738c">
+        <Attribute dwd:design-time-name="ca24072f-871e-49a1-8871-60444debb59f">
           <AttributeID>Miesiac</AttributeID>
           <AttributeHierarchyEnabled>false</AttributeHierarchyEnabled>
         </Attribute>
-        <Attribute dwd:design-time-name="4861cdc0-0017-4e4f-9c0f-60167b19f572">
+        <Attribute dwd:design-time-name="a29ff215-dd3b-4322-9a52-6462c78e74b0">
           <AttributeID>Dzien Tygodnia</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="0c929edb-e7fc-48ba-b23e-a568220339d4">
+        <Attribute dwd:design-time-name="7ff12f06-f154-4cfb-957e-37cf5f567b69">
           <AttributeID>Dzien Pracujacy</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="b7c6442c-5ce5-47b3-ab7f-5600d36bb2e1">
+        <Attribute dwd:design-time-name="9ade8938-37b1-4bf7-b500-a25e965eab03">
           <AttributeID>Czas Wakacyjny</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="fb5ae6d6-d0a2-4fb3-9169-c29b8c5829be">
+        <Attribute dwd:design-time-name="e54c418f-d4a6-48b9-81bd-e2949d4cf41f">
           <AttributeID>Swieto</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="e3e0b7d2-2a9b-42a2-81b1-ba48b8ce3edc">
+        <Attribute dwd:design-time-name="a52749d8-db74-4740-a773-9e9d5814831a">
           <AttributeID>Dzien Przedswiateczny</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="1320d864-a5fc-42e7-8f9f-74689babff7c">
+        <Attribute dwd:design-time-name="d8245f45-a913-499e-aec9-00dcb028694e">
           <AttributeID>Miesiac Nr</AttributeID>
           <AttributeHierarchyEnabled>false</AttributeHierarchyEnabled>
         </Attribute>
       </Attributes>
       <Hierarchies>
-        <Hierarchy dwd:design-time-name="9633adf1-5070-43c3-bb02-d647a8a0417b">
+        <Hierarchy dwd:design-time-name="204708f2-5027-4967-8e84-0e4d88c14832">
           <HierarchyID>Hierarchy</HierarchyID>
         </Hierarchy>
       </Hierarchies>
     </Dimension>
-    <Dimension dwd:design-time-name="8a74555b-7349-480d-a80c-3023b491de60">
+    <Dimension dwd:design-time-name="dc8496f5-5cbc-4a47-a8c1-ff419c7c0e71">
       <ID>ID Daty Zakonczenia</ID>
       <Name>ID Daty Zakonczenia</Name>
       <DimensionID>Data</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="c18d6888-3b41-4174-b969-dc1b8a4aa640">
+        <Attribute dwd:design-time-name="8644b590-b9d1-49ad-b6c0-76750fd7a989">
           <AttributeID>ID Daty</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="d28bc39a-af30-48cf-9a1c-260a776f45bf">
+        <Attribute dwd:design-time-name="230e3fab-58ad-4fe5-8cd8-2be3fa179ca8">
           <AttributeID>Data</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="9f9827f3-d56f-4076-9795-7f1d8d2a93ef">
+        <Attribute dwd:design-time-name="e0f09f92-0f61-4083-b4a7-c817ca246eae">
           <AttributeID>Rok</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="51c5e6b1-0241-493e-b5f3-8fbb69dd34b2">
+        <Attribute dwd:design-time-name="bb813cd5-66e5-48d6-b748-af489e7f7540">
           <AttributeID>Miesiac</AttributeID>
           <AttributeHierarchyEnabled>false</AttributeHierarchyEnabled>
         </Attribute>
-        <Attribute dwd:design-time-name="a6c628bc-5ff8-428b-8a8d-197788142132">
+        <Attribute dwd:design-time-name="1babd95e-e831-4301-935c-9539ffb9ff67">
           <AttributeID>Dzien Tygodnia</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="bc0d28a7-4f14-4bd3-a551-0826ffb07482">
+        <Attribute dwd:design-time-name="a3dede1d-1c73-48ba-bc01-b7c0f68ad872">
           <AttributeID>Dzien Pracujacy</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="5fb2439b-d644-45fc-955b-b3c7510973b7">
+        <Attribute dwd:design-time-name="49c67e67-0a2a-438a-b92b-597b42c1ed12">
           <AttributeID>Czas Wakacyjny</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="f596b6cb-df35-4fd8-acc8-49bed911eb78">
+        <Attribute dwd:design-time-name="37615002-4922-45fd-81d7-506e5ec606e8">
           <AttributeID>Swieto</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="61b08d84-4b14-4c9a-aaf8-ad3eefea5892">
+        <Attribute dwd:design-time-name="dc13c3eb-6a7f-47ee-a62a-023f9029d4a8">
           <AttributeID>Dzien Przedswiateczny</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="70f5d690-1142-4c54-bdaf-e1197787f419">
+        <Attribute dwd:design-time-name="ccca2cea-2af1-4f96-a832-62d1069db6cd">
           <AttributeID>Miesiac Nr</AttributeID>
           <AttributeHierarchyEnabled>false</AttributeHierarchyEnabled>
         </Attribute>
       </Attributes>
       <Hierarchies>
-        <Hierarchy dwd:design-time-name="642621d5-660a-4ab7-b900-0c46bd335956">
+        <Hierarchy dwd:design-time-name="1dd7b33d-8bb6-4565-bfb2-ba1b3b22b418">
           <HierarchyID>Hierarchy</HierarchyID>
         </Hierarchy>
       </Hierarchies>
     </Dimension>
-    <Dimension dwd:design-time-name="233353bc-422e-452d-bae4-251670b8ae51">
+    <Dimension dwd:design-time-name="f8b6b4a3-3e0a-4f1a-aab9-c871a0065f85">
       <ID>ID Czasu Rozpoczecia</ID>
       <Name>ID Czasu Rozpoczecia</Name>
       <DimensionID>Czas</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="c9b1ced9-4904-47f4-8a3c-952bae8517ba">
+        <Attribute dwd:design-time-name="f6e56422-2e80-4dad-82a0-7153da18d400">
           <AttributeID>ID Czasu</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="9864a68f-62db-4a0d-a205-1c9afd70c84c">
+        <Attribute dwd:design-time-name="9588074a-ab65-4777-ad4e-3cd822058c1b">
           <AttributeID>Godzina</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="08ca3fdc-def6-4163-bed0-9667ca36e057">
+        <Attribute dwd:design-time-name="15e11880-efbe-4add-a4ca-afcbc3a47ec9">
           <AttributeID>Pora Dnia</AttributeID>
         </Attribute>
       </Attributes>
       <Hierarchies>
-        <Hierarchy dwd:design-time-name="d5bf3548-e406-491c-915a-48a3345dcada">
+        <Hierarchy dwd:design-time-name="1d349a94-5401-4400-8a1c-ba7d4f715dd2">
           <HierarchyID>Hierarchy</HierarchyID>
         </Hierarchy>
       </Hierarchies>
     </Dimension>
-    <Dimension dwd:design-time-name="3eefff73-9856-439d-856b-d9b010f3b89d">
+    <Dimension dwd:design-time-name="b6ce630c-8537-4c4d-a82c-354c56974716">
       <ID>Smieci</ID>
       <Name>Smieci</Name>
       <DimensionID>Smieci</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="201ac2fc-eeb9-4ade-9647-3cd9503cda32">
+        <Attribute dwd:design-time-name="cb971ec4-2c05-4eaa-9901-87255ca41443">
           <AttributeID>ID Smieci</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="ff385275-1337-442e-8c01-c29f286a9461">
+        <Attribute dwd:design-time-name="b8bc4e9f-eff6-4c09-8dee-66bc7e84aec5">
           <AttributeID>Czy Interwencje</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
-    <Dimension dwd:design-time-name="23bd4029-86a7-4afe-8902-8521af90beab">
+    <Dimension dwd:design-time-name="a825d4f6-1462-4aea-aa18-95cfbdb4e719">
       <ID>ID Czasu Zakonczenia</ID>
       <Name>ID Czasu Zakonczenia</Name>
       <DimensionID>Czas</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="8dba28e4-7416-45ff-8bc6-f5d27f04c0a8">
+        <Attribute dwd:design-time-name="da803ff9-4d2e-4e8a-bc9d-5fc11258e0d2">
           <AttributeID>ID Czasu</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="a81ff3b6-e90f-40a8-9512-c4e7cca075f2">
+        <Attribute dwd:design-time-name="499091ad-a131-4868-8404-4d13d10d0bf5">
           <AttributeID>Godzina</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="9d8b527c-8cd8-42d5-b5d0-13231ce90c41">
+        <Attribute dwd:design-time-name="041a3a30-c1ce-460e-8b70-9cde4c658dcb">
           <AttributeID>Pora Dnia</AttributeID>
         </Attribute>
       </Attributes>
       <Hierarchies>
-        <Hierarchy dwd:design-time-name="e223e756-307e-4abd-aa7d-9b636bc5c5c3">
+        <Hierarchy dwd:design-time-name="898722da-6e7c-4586-8642-cb6ea566deb4">
           <HierarchyID>Hierarchy</HierarchyID>
         </Hierarchy>
       </Hierarchies>
     </Dimension>
-    <Dimension dwd:design-time-name="00ea09ea-0ba1-407f-bcad-b37aea5f4f2f">
+    <Dimension dwd:design-time-name="18f0f215-c1bb-4213-9082-cd8f46163cd8">
       <ID>Opis Patrolu</ID>
       <Name>Opis Patrolu</Name>
       <DimensionID>Opis Patrolu</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="44603f4e-ee0e-4834-97a9-861316c04db7">
+        <Attribute dwd:design-time-name="199dc5f4-428a-4432-958f-e996dd908ee2">
           <AttributeID>ID Opisu Patrolu</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="dab0b69d-697f-455f-8a75-6a7b3912953e">
+        <Attribute dwd:design-time-name="5f24da2f-83a1-453f-ac97-9dc3446507ce">
           <AttributeID>Marka Radiowozu</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="46e7e7ce-d8fa-4169-b6f7-bd72ddd8f516">
+        <Attribute dwd:design-time-name="96a5d3b8-80e4-421f-9f2f-10b8b8731bbc">
           <AttributeID>Model Radiowozu</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="cac12675-fe48-4df5-ac3b-3318fa690faf">
+        <Attribute dwd:design-time-name="5b1cacae-c432-4d7e-860f-676bc87b0247">
           <AttributeID>Nr Rejestracyjny</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="06fe2de4-6cbb-4fe4-9cf7-70f45d5badfd">
+        <Attribute dwd:design-time-name="e2b505f8-4d61-4012-9f3c-aec21a7a9f39">
           <AttributeID>Nr Odznaki Kierowcy</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="44e76fba-a898-4d56-8c8a-e0060545238d">
+        <Attribute dwd:design-time-name="f5177258-2e89-45f9-8652-7e4b2888cbf8">
           <AttributeID>Nr Odznaki Partnera</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
-    <Dimension dwd:design-time-name="a4f07bdb-5039-4616-b749-d9300e2ced11">
+    <Dimension dwd:design-time-name="56c84b6b-11e6-4f09-8029-74fcb3b24522">
       <ID>Patrole</ID>
       <Name>Patrole</Name>
       <DimensionID>Patrole</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="8c7992ba-d242-429e-bff8-f25e5caac4b1">
+        <Attribute dwd:design-time-name="4372a7ec-b377-4794-bf16-d8b61ac325de">
           <AttributeID>ID Patrolu</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="30a80f12-a7d8-4e66-8c01-8e5779cd1c6c">
+        <Attribute dwd:design-time-name="ee992e1a-40e0-422b-ad5f-79aa6aafe452">
           <AttributeID>ID Opisu Patrolu</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="bde7d477-1336-4fb5-8aef-2eb4bd678550">
+        <Attribute dwd:design-time-name="749ba1f4-40c2-459e-a668-d2376853e33e">
           <AttributeID>ID Smieci</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="5c1ce383-cbff-4f99-b865-5752173b0c82">
+        <Attribute dwd:design-time-name="733e334e-6be1-4cdd-a6f5-37b772b39884">
           <AttributeID>ID Daty Rozpoczecia</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="d77331b5-bddd-47a3-a3e8-829f5fae416e">
+        <Attribute dwd:design-time-name="863fa2d5-d7c9-4c93-bb4d-2537a124e8be">
           <AttributeID>ID Daty Zakonczenia</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="f1b37dfa-1c42-4914-8886-114ae9597fda">
+        <Attribute dwd:design-time-name="ce1bcac8-357c-4b94-9d8f-9c3cf8b9470a">
           <AttributeID>ID Czasu Rozpoczecia</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="7a5216b3-0ad1-4ecc-aaa4-4011b0ed3fb4">
+        <Attribute dwd:design-time-name="bcb6afce-dc08-4f9d-a159-21e3a889ffd1">
           <AttributeID>ID Czasu Zakonczenia</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
-    <Dimension dwd:design-time-name="5f7df8d4-1d1d-4166-8984-f03e95d6ad7a">
+    <Dimension dwd:design-time-name="c89de3ff-2b0f-4db1-8124-931f8ad62f49">
       <ID>Interwencje</ID>
       <Name>Interwencje</Name>
       <DimensionID>Interwencje</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="0abe0020-9e01-4fd9-a309-18d8b86366ec">
+        <Attribute dwd:design-time-name="cf2a3aa7-4b9c-4ca8-b75f-3c104c8a668d">
           <AttributeID>ID Interwencji</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="2b887e7c-6d2e-493f-aab7-0778b12a8c5f">
+        <Attribute dwd:design-time-name="98b54aa9-9fd8-4134-9fe3-98a25d2eb58d">
           <AttributeID>ID Patrolu</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="041aee9d-76bd-41ff-90e7-dbb6648fa102">
+        <Attribute dwd:design-time-name="2e8ccbd8-883c-4aec-bbb9-a2d4aabc0c49">
           <AttributeID>ID Daty</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="bc137abe-49c3-4d67-abfb-b131beac2281">
+        <Attribute dwd:design-time-name="98ae0fa8-3dbf-490f-a9f6-2b7add0338d0">
           <AttributeID>ID Czasu</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="73046275-29cb-4692-8475-5c6781d8c4df">
+        <Attribute dwd:design-time-name="89a5b86e-24a6-447f-a09e-a3b19f736d34">
           <AttributeID>ID Miejsca</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="688ded0f-be32-4dcb-9ff5-ca329127126a">
+        <Attribute dwd:design-time-name="40306d1d-3032-4d4a-ac5e-761fb4172723">
           <AttributeID>ID Zdarzenia</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
-    <Dimension dwd:design-time-name="40598699-07ab-4a97-a8b6-5214010867d7">
+    <Dimension dwd:design-time-name="a74a4684-82fd-4222-83b3-2cd7202f432b">
       <ID>Data</ID>
       <Name>Data</Name>
       <DimensionID>Data</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="9d36a69c-c2e5-41e3-a110-f7d72369af5b">
+        <Attribute dwd:design-time-name="ff6a5920-cf73-46df-8e35-7805ce3c713b">
           <AttributeID>ID Daty</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="2ba8ed2a-844b-4acc-951e-33fa9d3dc8f0">
+        <Attribute dwd:design-time-name="d672730c-df08-4430-9420-b7d9c061b9eb">
           <AttributeID>Data</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="90cbd904-9e97-4883-a28f-0453a92484f5">
+        <Attribute dwd:design-time-name="d91085f5-738d-4d15-99dc-0ade6f9df11e">
           <AttributeID>Rok</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="cfa2e317-43a9-402f-a7d8-002f07217aed">
+        <Attribute dwd:design-time-name="8511fea5-8005-40fe-98ff-df9054000f82">
           <AttributeID>Miesiac</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="5e6a51b3-f048-405a-9bea-1b1a280b993f">
+        <Attribute dwd:design-time-name="26b2244d-9136-4055-a121-a0565344acbc">
           <AttributeID>Dzien Tygodnia</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="dfc7f1e0-13ae-4d35-891c-9b1d6898384e">
+        <Attribute dwd:design-time-name="43c4f6a1-2ed6-49d8-83c2-9d25af6c24a0">
           <AttributeID>Dzien Pracujacy</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="5ca82698-8e21-454a-8041-e81e7017442e">
+        <Attribute dwd:design-time-name="7be1b7c2-5bd0-41f4-b5e9-a73b4a6dfd80">
           <AttributeID>Czas Wakacyjny</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="58863a8b-99ea-4c7a-b478-497abe59a9ec">
+        <Attribute dwd:design-time-name="525865df-a231-44ae-bd7a-bb5d929f4e1c">
           <AttributeID>Swieto</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="f00a97d5-53a1-4e81-a007-418de414fce7">
+        <Attribute dwd:design-time-name="744dd6f8-0288-4a82-a93a-ac87937f6133">
           <AttributeID>Dzien Przedswiateczny</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="482012d3-7b2c-4f33-af1b-c66d5c9915a5">
+        <Attribute dwd:design-time-name="e701064c-1c59-4246-9476-ff50d5f37701">
           <AttributeID>Miesiac Nr</AttributeID>
         </Attribute>
       </Attributes>
       <Hierarchies>
-        <Hierarchy dwd:design-time-name="cbc16ff4-0b42-4e8f-a7de-354856581503">
+        <Hierarchy dwd:design-time-name="7c2d4265-deaa-47de-8495-e0a561261ebc">
           <HierarchyID>Hierarchy</HierarchyID>
         </Hierarchy>
       </Hierarchies>
     </Dimension>
   </Dimensions>
   <MeasureGroups>
-    <MeasureGroup dwd:design-time-name="75522732-2a09-4d40-9f89-e7c8a63ae3ed">
+    <MeasureGroup dwd:design-time-name="6c5c5a3e-dc3f-4204-ad2f-80e8cf922f03">
       <ID>Interwencje Fakty</ID>
       <Name>Interwencje Fakty</Name>
       <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -868,80 +877,80 @@
       <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
       <State>Unprocessed</State>
       <Measures>
-        <Measure dwd:design-time-name="53f95d01-09e9-4758-95c7-b5bc746a068b">
+        <Measure dwd:design-time-name="dec9a5af-cebd-40d6-b192-1ab6acc73e80">
           <ID>Liczba Rannych</ID>
           <Name>Liczba Rannych</Name>
-          <Source dwd:design-time-name="6fae8c16-7623-46d9-a919-96d46989e63d">
+          <Source dwd:design-time-name="ea87050c-a8be-4762-b102-3c9b0672180e">
             <DataType>Integer</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="913c2203-9f60-4d37-8a4e-7ee912448774">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="9e5d4724-f316-4301-adba-4c8b69d8bbfe">
               <TableID>dbo_Interwencje_Fakty</TableID>
               <ColumnID>Liczba_rannych</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="36b9a19f-77f0-4d17-b842-4a229efdc38c">
+        <Measure dwd:design-time-name="1df5b590-25fc-4047-90da-a2ed2b6c6ee4">
           <ID>Liczba Ofiar</ID>
           <Name>Liczba Ofiar</Name>
-          <Source dwd:design-time-name="cada986f-09a8-4624-91d5-dcde40ed2719">
+          <Source dwd:design-time-name="4cf51edd-87ef-4960-b490-34db0712c34d">
             <DataType>Integer</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="141eb3b3-e0c7-4c4c-aa22-f25e55a951fa">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="7c3bbe23-29fe-43c7-9ce2-3969e5afa21d">
               <TableID>dbo_Interwencje_Fakty</TableID>
               <ColumnID>Liczba_ofiar</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="c6b67116-ba20-4111-a54d-8e7b6855ec57">
+        <Measure dwd:design-time-name="c57abdd2-07f3-4e94-a4eb-82b4da2af8c2">
           <ID>Liczba Sprawcow</ID>
           <Name>Liczba Sprawcow</Name>
-          <Source dwd:design-time-name="8c2b7878-1680-48a3-89b8-bf0875017911">
+          <Source dwd:design-time-name="e247eb0f-fd6a-40cf-9638-ed5c0d2ec7c3">
             <DataType>Integer</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="fec2f5d8-5265-481e-8bfd-25162709ad35">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="abcc0c51-9bb7-4d0f-a47e-a5fa2831059a">
               <TableID>dbo_Interwencje_Fakty</TableID>
               <ColumnID>Liczba_sprawcow</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="55f3d6ce-1d46-40f1-aadb-554dd654e17a">
+        <Measure dwd:design-time-name="3c1f15ce-7d9d-485f-9894-bdfa9e8ea920">
           <ID>Liczba Kar</ID>
           <Name>Liczba Kar</Name>
-          <Source dwd:design-time-name="9d3e60f5-957f-4e37-9624-0eb48775eca2">
+          <Source dwd:design-time-name="b5c657ae-e66a-46c4-85e8-94a41846882b">
             <DataType>Integer</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="fbeec923-0e7e-482e-a609-a93f0618f2f1">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="20fd9ca5-0073-4f88-8b98-32c018c9a8e8">
               <TableID>dbo_Interwencje_Fakty</TableID>
               <ColumnID>Liczba_kar</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="3a6a71df-25dd-495d-9c8a-24bf78763028">
+        <Measure dwd:design-time-name="f347e1d9-e83b-4e98-a6fa-ae3ed2a23863">
           <ID>Suma Kwot Kar</ID>
           <Name>Suma Kwot Kar</Name>
-          <Source dwd:design-time-name="111bb690-2e03-43cb-8ef8-919df4f1e511">
+          <Source dwd:design-time-name="6a6bda19-5359-4803-a243-37c3f0da2118">
             <DataType>Double</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="056708d6-9b39-4d72-8fa2-ed9cb2291017">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="7f1337d7-3ccc-4c90-9fe3-21185b04540b">
               <TableID>dbo_Interwencje_Fakty</TableID>
               <ColumnID>Suma_kwot_kar</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="0bfa20a4-52d5-4556-a5d9-ca21f6f66d42">
+        <Measure dwd:design-time-name="eb499668-f519-496a-ba28-20635252bc62">
           <ID>Suma Punktow Karnych</ID>
           <Name>Suma Punktow Karnych</Name>
-          <Source dwd:design-time-name="61e25ce4-0d10-4ba4-93f5-6b65b1937add">
+          <Source dwd:design-time-name="5b2356c5-b053-4794-9c69-9bba43f14a43">
             <DataType>Integer</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="a61e1cf2-fdec-44ed-ab92-15d173f79c04">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="74c65a68-d236-4c3e-81a7-0fbe389e727f">
               <TableID>dbo_Interwencje_Fakty</TableID>
               <ColumnID>Suma_punktow_karnych</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="64d2552c-be3e-41e7-9135-cb5a0cef4115">
+        <Measure dwd:design-time-name="4e0f3716-3627-4b99-9a16-2e6b262d7c19">
           <ID>Interwencje Fakty Count</ID>
           <Name>Interwencje Fakty Count</Name>
           <AggregateFunction>Count</AggregateFunction>
-          <Source dwd:design-time-name="2e9ccda0-41ce-49f0-a0b8-69d654c7ab20">
+          <Source dwd:design-time-name="4e4fb9b7-f9b9-4f55-8549-8dbec33bc426">
             <DataType>Integer</DataType>
             <DataSize>4</DataSize>
-            <Source xsi:type="RowBinding" dwd:design-time-name="75da7617-28c5-4746-9ccc-1cd130164e57">
+            <Source xsi:type="RowBinding" dwd:design-time-name="7c17a76c-e9f6-4d27-960e-e4f1ed473330">
               <TableID>dbo_Interwencje_Fakty</TableID>
             </Source>
           </Source>
@@ -950,16 +959,16 @@
       <StorageMode>Molap</StorageMode>
       <ProcessingMode>Regular</ProcessingMode>
       <Dimensions>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e8f2b5fb-f14d-4630-9130-af2ae140728c">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="3f2ebf73-dd43-43be-842e-c148e9577e1a">
           <CubeDimensionID>Miejsce</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="6dd17181-4b9f-4d01-8c15-7c8ac53c6835">
+            <Attribute dwd:design-time-name="9e803798-177a-403a-b4f4-7f81492b50c3">
               <AttributeID>ID Miejsca</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="5f987b20-3a14-4f2c-8f56-c45da6f1abb1">
+                <KeyColumn dwd:design-time-name="d498e692-293b-4b85-a40c-209e0647a800">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b539455e-5439-4b27-82de-df2c8fd8ba31">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6a9f06f1-c750-480a-8136-f8138e497ede">
                     <TableID>dbo_Interwencje_Fakty</TableID>
                     <ColumnID>ID_Miejsca</ColumnID>
                   </Source>
@@ -969,16 +978,16 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="5ab8925e-fcf9-4f3b-a542-2d1cbd015d5b">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="883ff8a0-bfa7-49ef-87f9-07bfdff53add">
           <CubeDimensionID>Czas</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="3ee10dcf-beea-4d7c-8bb3-2ca34b30d072">
+            <Attribute dwd:design-time-name="59ccf50a-f945-4300-9b0c-5a4b0d718783">
               <AttributeID>ID Czasu</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="b9d99969-4ecd-4e44-8652-385ce1652194">
+                <KeyColumn dwd:design-time-name="b2ec4056-bb1b-4ed6-9109-4e432cd4a4f6">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="fa23b8e6-9a97-49c3-9e7c-3f31f7e6ae5e">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="05ae3610-a3fb-4ecd-8b51-1a033192999f">
                     <TableID>dbo_Interwencje_Fakty</TableID>
                     <ColumnID>ID_Czasu</ColumnID>
                   </Source>
@@ -988,16 +997,16 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="8dee3e3d-d1c4-4957-b899-ee63dcc15ad8">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="c2f413ce-2052-4bb6-a34f-3d31da45a240">
           <CubeDimensionID>Zdarzenia</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="280fad1c-3f16-4051-9ea2-b43728275c5f">
+            <Attribute dwd:design-time-name="18885fcd-3753-4674-a4e7-6bb660cb42ca">
               <AttributeID>ID Zdarzenia</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="4a0b7f63-dc96-478b-b751-90b925630a12">
+                <KeyColumn dwd:design-time-name="305053ef-247c-4a41-8783-219c6b0a46c6">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1e34760d-edbb-4784-94b2-1e211fa77fa6">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="fa524ac4-15d9-409c-85e2-479f132c9a17">
                     <TableID>dbo_Interwencje_Fakty</TableID>
                     <ColumnID>ID_Zdarzenia</ColumnID>
                   </Source>
@@ -1007,15 +1016,15 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="a73e5384-6833-4ae8-b741-1984084fc125">
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="37efe14d-19df-431e-8c96-b10a837269f0">
           <CubeDimensionID>Interwencje</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="3a2849b0-cb77-483e-9e0d-db08ad21a7d2">
+            <Attribute dwd:design-time-name="1265664f-fe83-4524-ba04-e2d758478e45">
               <AttributeID>ID Interwencji</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="64376ac2-feb2-4dec-a7af-707c58e93fa9">
+                <KeyColumn dwd:design-time-name="d58a680b-4e79-4ea0-98bc-eb0c4e25c511">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7da19c16-c4d7-4248-97d1-0ab63fd4741b">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b40a81c1-9534-4b5d-b370-aa2db2977de4">
                     <TableID>dbo_Interwencje_Fakty</TableID>
                     <ColumnID>ID_Interwencji</ColumnID>
                   </Source>
@@ -1025,16 +1034,16 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="f2397f8a-d84d-44b6-846c-a3d0649637ac">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="c65d29ec-812a-4b83-bd7e-9efe2ba99b0c">
           <CubeDimensionID>Patrole</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="64039c7e-e865-47d4-9932-a6ac4b2aef17">
+            <Attribute dwd:design-time-name="bbd82fdb-ad33-4577-97f1-11ea6f8b2a99">
               <AttributeID>ID Patrolu</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="cac2bb3b-99e4-4232-94bc-a0ac9132174f">
+                <KeyColumn dwd:design-time-name="25a4d371-d06a-4738-9005-5d3b24ec88b1">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7cea116c-a8bd-4516-8d91-31cfdb1b3a7e">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d297d640-27d6-4d50-9ff6-e0c53ea57042">
                     <TableID>dbo_Interwencje_Fakty</TableID>
                     <ColumnID>ID_Patrolu</ColumnID>
                   </Source>
@@ -1044,16 +1053,16 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="cfe6d954-7688-4b4a-a0fa-818826928909">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="b5f9475c-8614-4390-87ca-fc48a0e8fcf1">
           <CubeDimensionID>Data</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="23a53f35-ab33-446c-8c99-41043b21ac05">
+            <Attribute dwd:design-time-name="d483812b-2b33-4159-9a37-aa5f8c3f4153">
               <AttributeID>ID Daty</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="e9185e5b-2d34-49d7-8d83-ba6f70cdff9f">
+                <KeyColumn dwd:design-time-name="c5afc8e1-8a93-4949-a93d-75292750f4f1">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="712c3b24-16be-4527-a392-58f1fb6cc238">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="17bcd5ab-e05f-4b68-9a31-22fbb3f0dfdf">
                     <TableID>dbo_Interwencje_Fakty</TableID>
                     <ColumnID>ID_Daty</ColumnID>
                   </Source>
@@ -1063,10 +1072,10 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="a4ffce44-e674-4077-be3c-3e3c68be5ffa">
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="e841cf46-cf0c-46be-9191-05a857268d61">
           <CubeDimensionID>Opis Patrolu</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="39a2be1e-b0a2-4985-b7e1-1b4c90fba0f6">
+            <Attribute dwd:design-time-name="69df446d-6c26-4102-a48d-38f13c1dd3a7">
               <AttributeID>ID Opisu Patrolu</AttributeID>
               <Type>Granularity</Type>
             </Attribute>
@@ -1076,10 +1085,10 @@
           <Materialization>Regular</Materialization>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
         </Dimension>
-        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="e55c109f-953a-4e97-a546-267cf72a1214">
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="78e04fd2-9e86-48c8-83db-4c22307f73a9">
           <CubeDimensionID>Smieci</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="e89c1a7f-d944-47e6-9429-35130a70c041">
+            <Attribute dwd:design-time-name="14af3d9d-d5bc-428c-b591-552d680473f9">
               <AttributeID>ID Smieci</AttributeID>
               <Type>Granularity</Type>
             </Attribute>
@@ -1089,10 +1098,10 @@
           <Materialization>Regular</Materialization>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
         </Dimension>
-        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="7522febf-d9c2-4dce-b584-ba78c51c42a8">
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="b6b09497-5a55-48b0-a2c4-9b427997ea1a">
           <CubeDimensionID>ID Daty Rozpoczecia</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="303d0f78-ac98-4555-aeb5-274652442ca4">
+            <Attribute dwd:design-time-name="f6d2e69b-fc0f-4d62-add0-8ce8194abf47">
               <AttributeID>ID Daty</AttributeID>
               <Type>Granularity</Type>
             </Attribute>
@@ -1102,10 +1111,10 @@
           <Materialization>Regular</Materialization>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
         </Dimension>
-        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="e421e118-786c-4379-8d7d-210c2a7c46d5">
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="b02fd3b7-640c-4f4e-bb00-5d02324539b9">
           <CubeDimensionID>ID Daty Zakonczenia</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="58f708ad-8d9b-4d6e-a87d-25c293b3c2e5">
+            <Attribute dwd:design-time-name="298db9f9-8663-4ebd-9d8c-53b510152a56">
               <AttributeID>ID Daty</AttributeID>
               <Type>Granularity</Type>
             </Attribute>
@@ -1115,10 +1124,10 @@
           <Materialization>Regular</Materialization>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
         </Dimension>
-        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="314276f5-33d0-4c1a-b738-fe3e067ac84e">
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="65719311-92b8-48db-ba82-eec3a067a797">
           <CubeDimensionID>ID Czasu Rozpoczecia</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="5e47ec1b-ea1a-436b-8256-0932c3481b80">
+            <Attribute dwd:design-time-name="cd58d707-78ca-496c-985c-af1c88f77089">
               <AttributeID>ID Czasu</AttributeID>
               <Type>Granularity</Type>
             </Attribute>
@@ -1128,10 +1137,10 @@
           <Materialization>Regular</Materialization>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
         </Dimension>
-        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="d2e07787-345b-4389-bcd7-d46549615b83">
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="4df4b244-8f07-47eb-8f34-42ea2bc06d06">
           <CubeDimensionID>ID Czasu Zakonczenia</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="27420a13-db26-42ec-afda-816464d2515c">
+            <Attribute dwd:design-time-name="aa663754-513a-4566-b048-1fd481208bc4">
               <AttributeID>ID Czasu</AttributeID>
               <Type>Granularity</Type>
             </Attribute>
@@ -1141,10 +1150,18 @@
           <Materialization>Regular</Materialization>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
         </Dimension>
+        <Dimension xsi:type="ManyToManyMeasureGroupDimension" dwd:design-time-name="11444fcb-13b5-4c34-8ac1-485bfca4474d">
+          <CubeDimensionID>Opis Kary</CubeDimensionID>
+          <MeasureGroupID>Kary Fakty</MeasureGroupID>
+        </Dimension>
+        <Dimension xsi:type="ManyToManyMeasureGroupDimension" dwd:design-time-name="a3118ecf-51a1-4c2c-85f7-560733d87206">
+          <CubeDimensionID>Notowani</CubeDimensionID>
+          <MeasureGroupID>Kary Fakty</MeasureGroupID>
+        </Dimension>
       </Dimensions>
       <Partitions />
     </MeasureGroup>
-    <MeasureGroup dwd:design-time-name="4ece25fa-2e7f-4516-a353-061d27050d25">
+    <MeasureGroup dwd:design-time-name="bffef917-36ac-4a88-afc0-d1aa9ef456ba">
       <ID>Kary Fakty</ID>
       <Name>Kary Fakty</Name>
       <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -1152,36 +1169,36 @@
       <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
       <State>Unprocessed</State>
       <Measures>
-        <Measure dwd:design-time-name="5bacb018-362a-4a45-a292-aefba78f57cb">
+        <Measure dwd:design-time-name="94ef1731-4eab-4d43-abae-d9bb0411ae23">
           <ID>Kwota Mandatu</ID>
           <Name>Kwota Mandatu</Name>
-          <Source dwd:design-time-name="87619c0c-2df9-4894-ac7e-99c5e55eb9f1">
+          <Source dwd:design-time-name="3361cba1-e82c-4e63-ab20-ea20b0ca543e">
             <DataType>Double</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="34bec260-5c6e-4de1-bd2e-d5be998b4c2a">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="7d00c8c6-6777-428d-9e2b-8662d1ea33c4">
               <TableID>dbo_Kary_Fakty</TableID>
               <ColumnID>Kwota_mandatu</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="4675bc79-81f7-4201-bbdc-040ea4e405f3">
+        <Measure dwd:design-time-name="819359fe-f066-4bdf-9c53-0b151bcd58e9">
           <ID>Punkty Karne</ID>
           <Name>Punkty Karne</Name>
-          <Source dwd:design-time-name="fc7c763d-bf18-4728-ac81-16d35c3b3028">
+          <Source dwd:design-time-name="af8c60b5-f66e-4a6f-950f-eb2aa6b5a5ac">
             <DataType>Integer</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="78811ecd-abde-4c18-95f4-55fb85b17127">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="35d28f1f-b97b-4d7e-828b-aac44cb03740">
               <TableID>dbo_Kary_Fakty</TableID>
               <ColumnID>Punkty_karne</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="3b3d70e6-7f94-49ec-aa48-b05731c3e847">
+        <Measure dwd:design-time-name="a29a96c2-f37a-43bc-bc1b-db981a9e33e5">
           <ID>Kary Fakty Count</ID>
           <Name>Kary Fakty Count</Name>
           <AggregateFunction>Count</AggregateFunction>
-          <Source dwd:design-time-name="01317cc9-cd14-4391-bec6-55808da113ea">
+          <Source dwd:design-time-name="5d1ea7ed-8888-4341-ae10-3f8dc247e57c">
             <DataType>Integer</DataType>
             <DataSize>4</DataSize>
-            <Source xsi:type="RowBinding" dwd:design-time-name="2b0913a9-cab6-41a2-8be8-100f7529223b">
+            <Source xsi:type="RowBinding" dwd:design-time-name="88079b0f-5101-4264-8ed4-0d1251cf099a">
               <TableID>dbo_Kary_Fakty</TableID>
             </Source>
           </Source>
@@ -1190,15 +1207,15 @@
       <StorageMode>Molap</StorageMode>
       <ProcessingMode>Regular</ProcessingMode>
       <Dimensions>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="8ed6238b-4aaa-46bc-8198-b5e2206772ed">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="a4f6b36b-788f-48d5-b553-e068bdab4105">
           <CubeDimensionID>Opis Kary</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="989f4277-1f4b-48a7-9473-8295bbda82d2">
+            <Attribute dwd:design-time-name="eea8104d-19d0-431d-bd28-4f31ab621470">
               <AttributeID>ID Opisu Kary</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="05fac965-778b-46de-9312-6195aee306fa">
+                <KeyColumn dwd:design-time-name="be238edc-eec5-4ff4-b0c7-29d22e268b32">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="17e78539-4319-4cff-9508-1ed66308560c">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="adc619ed-fa37-48f8-9e26-c59490bdb090">
                     <TableID>dbo_Kary_Fakty</TableID>
                     <ColumnID>ID_Opisu_kary</ColumnID>
                   </Source>
@@ -1208,15 +1225,15 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="5efaacab-863c-4857-ba85-0bff01b4d0d3">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="0078575d-330b-4596-b4f8-fafb8645a72f">
           <CubeDimensionID>Notowani</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="9dca996b-c507-48df-8871-0f6b600ccb73">
+            <Attribute dwd:design-time-name="2cd679a1-799e-4a8b-8072-47d41f3518d3">
               <AttributeID>ID Notowanego</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="4029c4e9-3171-488f-884b-c3db365a956a">
+                <KeyColumn dwd:design-time-name="0e2c4eeb-38da-47c4-b2cf-2bc5aa037cd9">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="fe1d6642-5b26-497c-af53-891b85ad0703">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c60932b3-b81d-48b7-bcf8-24917aa992ae">
                     <TableID>dbo_Kary_Fakty</TableID>
                     <ColumnID>ID_Notowanego</ColumnID>
                   </Source>
@@ -1226,15 +1243,15 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="2662ef98-f696-4bf6-a577-fc26d08c83c5">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="76c3a6ac-0c2d-439d-be9f-cf34121318ea">
           <CubeDimensionID>Interwencje</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="c22d2972-36ad-49dd-9f79-47ef6489be69">
+            <Attribute dwd:design-time-name="63b759f5-5709-4d2d-b932-2289d9da9466">
               <AttributeID>ID Interwencji</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="88976dbf-7402-4e20-87c6-7f1e2035a66b">
+                <KeyColumn dwd:design-time-name="cd469985-d56e-4fc7-9e1d-41ea6efaab5f">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1b4f0125-ab30-45e5-8456-57a9c92f1550">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f7c054b2-4a7e-47e2-9ad0-57d19364f9b1">
                     <TableID>dbo_Kary_Fakty</TableID>
                     <ColumnID>ID_Interwencji</ColumnID>
                   </Source>
@@ -1244,10 +1261,10 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="fd3bcab8-aa0c-40fb-bafd-51b697d4bb46">
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="54f56edb-f46a-4ce0-ba65-91371f6eeed9">
           <CubeDimensionID>Czas</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="5b16c17a-4c5e-438e-a34b-b8db1f69f3c9">
+            <Attribute dwd:design-time-name="3bfc1ec2-0a3d-45ca-9223-3dc543c4c06d">
               <AttributeID>ID Czasu</AttributeID>
               <Type>Granularity</Type>
             </Attribute>
@@ -1257,10 +1274,10 @@
           <Materialization>Regular</Materialization>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
         </Dimension>
-        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="a97501ea-187e-4a64-b24f-4bae2f8d35bf">
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="e9264856-f241-4ba7-8411-3c7d15538a2d">
           <CubeDimensionID>Miejsce</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="87708f54-78c4-47ef-808a-4f97947d82de">
+            <Attribute dwd:design-time-name="446158b7-122d-4955-bd26-954de5f1c6a2">
               <AttributeID>ID Miejsca</AttributeID>
               <Type>Granularity</Type>
             </Attribute>
@@ -1270,10 +1287,10 @@
           <Materialization>Regular</Materialization>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
         </Dimension>
-        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="74760972-45b9-447e-8a2e-41741ada7253">
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="8f112921-6226-422b-8438-3ff09e95a604">
           <CubeDimensionID>Zdarzenia</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="7ab033d8-a61c-43c8-b327-d8c777586dd7">
+            <Attribute dwd:design-time-name="b516e555-beea-4263-aca7-7ba5111eca41">
               <AttributeID>ID Zdarzenia</AttributeID>
               <Type>Granularity</Type>
             </Attribute>
@@ -1283,10 +1300,10 @@
           <Materialization>Regular</Materialization>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
         </Dimension>
-        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="63902369-9be3-42b2-8e6a-2ab8e7b4349a">
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="9be9a416-a83a-4bc2-b55c-97bfd9c4b6df">
           <CubeDimensionID>Patrole</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="abe91001-ec05-4b6e-94f9-f4d796833dee">
+            <Attribute dwd:design-time-name="f043d7e3-d8bf-4131-9ce7-4a7a3d92426d">
               <AttributeID>ID Patrolu</AttributeID>
               <Type>Granularity</Type>
             </Attribute>
@@ -1296,10 +1313,10 @@
           <Materialization>Regular</Materialization>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
         </Dimension>
-        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="9061d6f5-a28c-4931-b7cb-c9eee786b4d3">
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="0d2c079d-c2c6-4502-8520-ce0462cd8d7d">
           <CubeDimensionID>Data</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="b55a56b1-3eab-4601-9419-2c407e2cddc1">
+            <Attribute dwd:design-time-name="4e6247a1-0d0e-4f7d-aeba-8dac0ccff8a6">
               <AttributeID>ID Daty</AttributeID>
               <Type>Granularity</Type>
             </Attribute>
@@ -1309,10 +1326,10 @@
           <Materialization>Regular</Materialization>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
         </Dimension>
-        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="18f931c0-8ad2-4a1f-8809-4b4bb8888ab4">
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="4f8afb0d-f50f-40a9-97e4-bb67c0d1d034">
           <CubeDimensionID>ID Czasu Rozpoczecia</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="e327df56-3e3e-4d1d-add1-f600f0801597">
+            <Attribute dwd:design-time-name="1ec83dec-eb71-48ca-898c-cb6934c4f2fd">
               <AttributeID>ID Czasu</AttributeID>
               <Type>Granularity</Type>
             </Attribute>
@@ -1322,10 +1339,10 @@
           <Materialization>Regular</Materialization>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
         </Dimension>
-        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="02227b96-ddcc-42a4-80b4-77ac3ff4c336">
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="18174d70-bd6b-42f6-bc0b-9564720b7e72">
           <CubeDimensionID>ID Daty Zakonczenia</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="8cf32296-dd20-4793-976a-708325676863">
+            <Attribute dwd:design-time-name="8eebc64c-8577-41a1-b388-14ae9dfa4cd9">
               <AttributeID>ID Daty</AttributeID>
               <Type>Granularity</Type>
             </Attribute>
@@ -1335,10 +1352,10 @@
           <Materialization>Regular</Materialization>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
         </Dimension>
-        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="998fa2bd-e352-4824-958b-2a32b381c193">
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="f3145036-4396-47a5-8036-5ace85bf2899">
           <CubeDimensionID>Smieci</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="bc5dcdfb-094f-43f6-8bd3-56d1036d5a55">
+            <Attribute dwd:design-time-name="659a97d0-9b04-4456-ae99-fb1079ceaa71">
               <AttributeID>ID Smieci</AttributeID>
               <Type>Granularity</Type>
             </Attribute>
@@ -1348,10 +1365,10 @@
           <Materialization>Regular</Materialization>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
         </Dimension>
-        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="a30a4e6e-db8f-496c-959f-3896eabfb950">
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="d303db2b-525f-436f-9205-5d159297bffb">
           <CubeDimensionID>ID Czasu Zakonczenia</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="529cb0e4-b0bb-419a-8c59-39f2f299b4f2">
+            <Attribute dwd:design-time-name="556736ed-8163-4458-b931-a5a567d94647">
               <AttributeID>ID Czasu</AttributeID>
               <Type>Granularity</Type>
             </Attribute>
@@ -1361,10 +1378,10 @@
           <Materialization>Regular</Materialization>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
         </Dimension>
-        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="ef595116-fcd1-45b1-a9ce-92073f5b531e">
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="8aaec9c0-2c12-4ea7-b075-7fbf08d28e57">
           <CubeDimensionID>Opis Patrolu</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="9349f753-2767-478a-8845-9cc36f5d242c">
+            <Attribute dwd:design-time-name="0f545354-1008-40d6-b348-1e6be057dbd7">
               <AttributeID>ID Opisu Patrolu</AttributeID>
               <Type>Granularity</Type>
             </Attribute>
@@ -1374,10 +1391,10 @@
           <Materialization>Regular</Materialization>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
         </Dimension>
-        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="a3848f1b-353e-4d5e-9e96-817b89bbc22d">
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="a3648816-8008-4e29-9e0c-e6d6c4c8764d">
           <CubeDimensionID>ID Daty Rozpoczecia</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="5661aae9-84f7-4ceb-b2a8-1aa9f2ebd0c9">
+            <Attribute dwd:design-time-name="ff0b3ac0-380e-4dbd-9698-0d6f6f87ba40">
               <AttributeID>ID Daty</AttributeID>
               <Type>Granularity</Type>
             </Attribute>
@@ -1390,7 +1407,7 @@
       </Dimensions>
       <Partitions />
     </MeasureGroup>
-    <MeasureGroup dwd:design-time-name="5bfe64ad-8acc-46e3-8cbe-edcd169b20d6">
+    <MeasureGroup dwd:design-time-name="565d8566-b68b-44ed-b07a-b7a55f69b172">
       <ID>Patrole Fakty</ID>
       <Name>Patrole Fakty</Name>
       <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -1398,36 +1415,36 @@
       <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
       <State>Unprocessed</State>
       <Measures>
-        <Measure dwd:design-time-name="ef62d552-6c05-49d3-8145-fa1bfd3f361c">
+        <Measure dwd:design-time-name="8a2a3415-13b0-4bf8-9ac3-b433ab1695ba">
           <ID>Czas Trwania Min</ID>
           <Name>Czas Trwania Min</Name>
-          <Source dwd:design-time-name="456cd05e-3e9c-4266-9645-fff1ef0854ca">
+          <Source dwd:design-time-name="3cfcec21-a360-49cf-bce1-28cda96a966a">
             <DataType>Integer</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="8c384a44-608b-4715-9812-cd44e349e4b8">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="f697eacb-6acf-4741-8981-258105f426f5">
               <TableID>dbo_Patrole_Fakty</TableID>
               <ColumnID>Czas_trwania_min</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="f28c6b5c-fe26-4002-a474-a8c9f2c9fc75">
+        <Measure dwd:design-time-name="7071b496-e24d-44ef-be39-f88207aa3c9b">
           <ID>Liczba Interwencji</ID>
           <Name>Liczba Interwencji</Name>
-          <Source dwd:design-time-name="143be730-4d1f-4a35-82a6-241caf87d0e6">
+          <Source dwd:design-time-name="49746644-8c8b-467f-9033-63bf97d8196f">
             <DataType>Integer</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="2854762e-1c49-4c20-8280-a91bfc41908a">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="4ad27e86-76d1-47ad-a68a-207e99adc5fb">
               <TableID>dbo_Patrole_Fakty</TableID>
               <ColumnID>Liczba_interwencji</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="7fa29f9b-5393-4118-8c53-5c1c86f4689e">
+        <Measure dwd:design-time-name="e039d048-9ff3-418f-bcdf-9d8997c77801">
           <ID>Patrole Fakty Count</ID>
           <Name>Patrole Fakty Count</Name>
           <AggregateFunction>Count</AggregateFunction>
-          <Source dwd:design-time-name="9becdfc1-f8e6-4218-906a-488db7a76cc2">
+          <Source dwd:design-time-name="8b09bbb3-b5df-42fe-aa22-a04e66203316">
             <DataType>Integer</DataType>
             <DataSize>4</DataSize>
-            <Source xsi:type="RowBinding" dwd:design-time-name="2e5f915b-a997-4b29-b08a-a0a9521c573c">
+            <Source xsi:type="RowBinding" dwd:design-time-name="23e3a5b0-76bc-467b-9259-d6d5013e874c">
               <TableID>dbo_Patrole_Fakty</TableID>
             </Source>
           </Source>
@@ -1436,16 +1453,16 @@
       <StorageMode>Molap</StorageMode>
       <ProcessingMode>Regular</ProcessingMode>
       <Dimensions>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="dc477519-ad63-4b50-83b6-85774747a798">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="aeff6758-2fdc-48d1-8cd2-4393c5e72d7e">
           <CubeDimensionID>ID Daty Rozpoczecia</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="be337c1b-99d0-4785-9c4f-b3dd57ad1e74">
+            <Attribute dwd:design-time-name="6ebf0deb-7d88-4208-9b11-b46f071223c0">
               <AttributeID>ID Daty</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="9c90c298-732a-476b-b256-a641a7408dc1">
+                <KeyColumn dwd:design-time-name="760a4d7b-be14-4fc1-8936-e58c74949501">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ae684a45-e970-4320-a97d-ab11d10b7993">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6f98f63c-d550-4e7b-8e2f-923ab22980bd">
                     <TableID>dbo_Patrole_Fakty</TableID>
                     <ColumnID>ID_Daty_rozpoczecia</ColumnID>
                   </Source>
@@ -1455,16 +1472,16 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="556589fb-2371-48fd-a3b5-62657c5a3355">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="060efc11-8b7e-4265-8dfa-bfe7312a8196">
           <CubeDimensionID>ID Daty Zakonczenia</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="00a188b0-bbb4-4db1-b3bc-5790b4b2664d">
+            <Attribute dwd:design-time-name="5008ac0f-b06b-411a-a811-0b1119b3e8bb">
               <AttributeID>ID Daty</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="edf8db57-d07b-47dc-beaa-1a119d1ecbfe">
+                <KeyColumn dwd:design-time-name="677996e9-2ff1-4049-8a89-fd82d72bda9f">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e7f48cc8-25ad-4925-ac0a-0abde504a5ec">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6b1c66d6-6199-479a-b3cd-3526f2d98716">
                     <TableID>dbo_Patrole_Fakty</TableID>
                     <ColumnID>ID_Daty_zakonczenia</ColumnID>
                   </Source>
@@ -1474,16 +1491,16 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="7efd68d1-9aa6-41f9-87a6-ca2f1bc3df8e">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="874c532f-bd50-4b6e-8a7e-13f8f8b6235b">
           <CubeDimensionID>ID Czasu Rozpoczecia</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="ce5e12e3-5876-463b-a217-19e0024e07d5">
+            <Attribute dwd:design-time-name="855dabc7-3c06-44a8-b12c-ccebdbfb37c0">
               <AttributeID>ID Czasu</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="4a1019da-cc9d-4386-9050-418c00b4743c">
+                <KeyColumn dwd:design-time-name="9b2b7509-bd87-4dc3-8aa9-50d7ca48ba35">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c2267978-2855-4e23-b624-f0d3f366b8bd">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a3d44196-5f8b-4bb1-b642-1b46b941c1a2">
                     <TableID>dbo_Patrole_Fakty</TableID>
                     <ColumnID>ID_Czasu_rozpoczecia</ColumnID>
                   </Source>
@@ -1493,16 +1510,16 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="80a5e300-8e1e-4a94-ac64-6fdcccde3cb3">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="c003d3b5-328b-4fb8-b602-06092893cc7a">
           <CubeDimensionID>Smieci</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="812cf0cb-dc3c-41c4-b791-4d63fab57d70">
+            <Attribute dwd:design-time-name="d07a1a13-42f2-4a1c-b29c-e8367fa8d891">
               <AttributeID>ID Smieci</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="aac6e3ad-9d2d-4553-bde9-ce7bc10982d5">
+                <KeyColumn dwd:design-time-name="7592b474-8ed5-4d15-8bfe-80bd222fd0ef">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="11e3a416-bf4a-4d2b-8891-623c5669b14a">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="19e4bc85-babf-4461-9fba-0a8e90e7e9ce">
                     <TableID>dbo_Patrole_Fakty</TableID>
                     <ColumnID>ID_Smieci</ColumnID>
                   </Source>
@@ -1512,16 +1529,16 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="c9ab619f-1e0c-4f2d-9553-2dd9d062b2a1">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="c0b35651-01bf-4244-81b8-28bc503752ae">
           <CubeDimensionID>ID Czasu Zakonczenia</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="b5214f12-1a04-4ec0-b3ef-82a2b849d26c">
+            <Attribute dwd:design-time-name="94048727-6832-4bc6-86e6-dc226c3f5ed6">
               <AttributeID>ID Czasu</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="ccf8160a-0a8d-44b3-a1ef-fdcbaf0b3302">
+                <KeyColumn dwd:design-time-name="c51907e2-870e-41b3-85be-bedff58c6067">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2496b0af-50f7-4c66-b3ec-ed434cba026b">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6a3cf425-c407-4bde-8fea-47155c3a7589">
                     <TableID>dbo_Patrole_Fakty</TableID>
                     <ColumnID>ID_Czasu_zakonczenia</ColumnID>
                   </Source>
@@ -1531,16 +1548,16 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="47e858ac-f3d7-488b-8cab-037e3300e1b9">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="d381f7ce-d74f-4244-aa93-f6a892c59778">
           <CubeDimensionID>Miejsce</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="ae34de79-18b3-4c9a-a526-033dc11bbaa9">
+            <Attribute dwd:design-time-name="8051e182-61d5-4395-8f54-a12c2224051d">
               <AttributeID>ID Miejsca</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="e81ec7f7-ae17-4513-bad7-b9f296a3a6e0">
+                <KeyColumn dwd:design-time-name="d1d4cfe1-d471-45c8-9c3c-11a451589197">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="17b0372f-fa90-4498-9405-0a7d2d5cb1e2">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="62098e84-5e44-4931-a5e1-5ca7fa7643d1">
                     <TableID>dbo_Patrole_Fakty</TableID>
                     <ColumnID>ID_Miejsca</ColumnID>
                   </Source>
@@ -1550,16 +1567,16 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="870d50f3-35a3-4d91-930f-91ab358f2dd8">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="933c4edf-af1a-4e98-9ce5-e1e79106e45f">
           <CubeDimensionID>Opis Patrolu</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="60aad5fa-4571-4789-9e06-a1a3c0063e13">
+            <Attribute dwd:design-time-name="c691d7df-06a6-4b53-adfb-6db02b19ab0a">
               <AttributeID>ID Opisu Patrolu</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="bfe1fd6c-e399-4b74-a61f-cb55def61201">
+                <KeyColumn dwd:design-time-name="d04e12ec-3ab4-4b51-bf9f-dcce23e16533">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="204c12f9-9917-40ab-becc-03faec62ec20">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a7ba96f8-d7e6-4fe7-9ddf-1d651a79bba0">
                     <TableID>dbo_Patrole_Fakty</TableID>
                     <ColumnID>ID_Opisu_patrolu</ColumnID>
                   </Source>
@@ -1569,15 +1586,15 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="08a14148-bd1e-4e38-92f4-18954e291429">
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="1621e14f-4612-4fcc-9aca-74668ed93663">
           <CubeDimensionID>Patrole</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="f80813eb-6e61-4723-ade6-de5998bfafe3">
+            <Attribute dwd:design-time-name="3fb499ac-1ca1-4e13-aec9-8e25b9950d09">
               <AttributeID>ID Patrolu</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="be9c8cac-abbc-439e-abc9-7b549d54af62">
+                <KeyColumn dwd:design-time-name="a5b3938f-c43e-41fd-b3ec-eaaac9817598">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="25cfe12e-b8f1-48b1-b8ba-4a780a5c153e">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="44a93c73-c4b8-4773-9e56-096c72291815">
                     <TableID>dbo_Patrole_Fakty</TableID>
                     <ColumnID>ID_Patrolu</ColumnID>
                   </Source>
@@ -1587,15 +1604,39 @@
             </Attribute>
           </Attributes>
         </Dimension>
+        <Dimension xsi:type="ManyToManyMeasureGroupDimension" dwd:design-time-name="aac769c1-5949-4b8a-9e98-5aa2b8662036">
+          <CubeDimensionID>Data</CubeDimensionID>
+          <MeasureGroupID>Interwencje Fakty</MeasureGroupID>
+        </Dimension>
+        <Dimension xsi:type="ManyToManyMeasureGroupDimension" dwd:design-time-name="8b36a952-0cb7-42fe-8877-1c9a83fbf0b9">
+          <CubeDimensionID>Interwencje</CubeDimensionID>
+          <MeasureGroupID>Kary Fakty</MeasureGroupID>
+        </Dimension>
+        <Dimension xsi:type="ManyToManyMeasureGroupDimension" dwd:design-time-name="3a83b6e3-ca2e-4441-b2fd-69be1458738d">
+          <CubeDimensionID>Czas</CubeDimensionID>
+          <MeasureGroupID>Interwencje Fakty</MeasureGroupID>
+        </Dimension>
+        <Dimension xsi:type="ManyToManyMeasureGroupDimension" dwd:design-time-name="9e622448-53aa-45d0-8e14-cbdceffc5d2a">
+          <CubeDimensionID>Zdarzenia</CubeDimensionID>
+          <MeasureGroupID>Interwencje Fakty</MeasureGroupID>
+        </Dimension>
+        <Dimension xsi:type="ManyToManyMeasureGroupDimension" dwd:design-time-name="dbac0796-6832-43da-91d1-12fdc56f947d">
+          <CubeDimensionID>Opis Kary</CubeDimensionID>
+          <MeasureGroupID>Kary Fakty</MeasureGroupID>
+        </Dimension>
+        <Dimension xsi:type="ManyToManyMeasureGroupDimension" dwd:design-time-name="0caf2067-60e4-4a0b-813a-c2430268f1c7">
+          <CubeDimensionID>Notowani</CubeDimensionID>
+          <MeasureGroupID>Kary Fakty</MeasureGroupID>
+        </Dimension>
       </Dimensions>
       <Partitions />
     </MeasureGroup>
   </MeasureGroups>
-  <Source dwd:design-time-name="b1093701-59d5-4d44-975a-09163dc967e1">
+  <Source dwd:design-time-name="1a37319e-08b1-4fa7-ab32-8c37f8de34c8">
     <DataSourceViewID>policjaHDview</DataSourceViewID>
   </Source>
   <MdxScripts>
-    <MdxScript dwd:design-time-name="c04cc280-3e8c-42db-9c4f-4203e9baed8c">
+    <MdxScript dwd:design-time-name="8b7caf3d-77aa-4a5d-8c7f-f8b2a0b85210">
       <ID>MdxScript</ID>
       <Name>MdxScript</Name>
       <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
