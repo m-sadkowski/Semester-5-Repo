@@ -1,0 +1,7 @@
+﻿-- Przeanalizuj rozkład rodzajów kar dla typów przewinień.
+
+SELECT 
+    [Opis Kary].[Rodzaj].[Rodzaj].Members ON COLUMNS,
+    [Zdarzenia].[Rodzaj].[Rodzaj].Members ON ROWS
+FROM [policjaHDview]
+WHERE ([Measures].[Kary Fakty Count])

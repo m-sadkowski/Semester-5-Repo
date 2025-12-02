@@ -1,0 +1,13 @@
+﻿-- Dlaczego w tym miesiącu nastąpił wzrost/spadek stosunku liczby wypadków drogowych do ilości patroli?
+
+WITH 
+MEMBER [Measures].[Stosunek Wypadki do Patroli] AS
+    IIF([Measures].[Patrole Fakty Count] = 0, NULL,
+    [Measures].[Interwencje Fakty Count] / [Measures].[Patrole Fakty Count]), 
+    FORMAT_STRING = "Percent"
+
+SELECT 
+    {[Measures].[Interwencje Fakty Count], [Measures].[Patrole Fakty Count], [Measures].[Stosunek Wypadki do Patroli]} ON COLUMNS,
+    Tail([Data].[Kalendarz].[Miesiac].Members, 12) ON ROWS
+FROM [policjaHDview]
+WHERE ([Zdarzenia].[Kategoria].&[Drogowe])

@@ -1,0 +1,11 @@
+﻿-- Wskaż najaktywniejszych funkcjonariuszy pod względem liczby i rodzaju nałożonych kar.
+
+SELECT 
+    {[Measures].[Kary Fakty Count]} ON COLUMNS,
+    -- top kierowcow patroli
+    TopCount(
+        [Opis Patrolu].[Nr Odznaki Kierowcy].[Nr Odznaki Kierowcy].Members,
+        5,
+        [Measures].[Kary Fakty Count]
+    ) ON ROWS
+FROM [policjaHDview]

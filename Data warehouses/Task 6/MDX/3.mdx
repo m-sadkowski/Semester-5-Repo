@@ -1,0 +1,12 @@
+﻿-- Zidentyfikuj okresy (dni tygodnia, pory dnia) o największej liczbie wypadków.
+
+SELECT 
+    {[Measures].[Interwencje Fakty Count]} ON COLUMNS,
+    -- top 10 kombinacji dnia tygodnia i pory dnia z najwieksza iloscia interwencji
+    TopCount(
+        ([Data].[Dzien Tygodnia].[Dzien Tygodnia].Members * [Czas].[Pora Dnia].[Pora Dnia].Members),
+        10,
+        [Measures].[Interwencje Fakty Count]
+    ) ON ROWS
+FROM [policjaHDview]
+WHERE ([Zdarzenia].[Kategoria].&[Drogowe])

@@ -1,0 +1,19 @@
+﻿-- Porównaj liczbę patroli i wypadków drogowych w poszczególnych dzielnicach w analizowanym miesiącu względem poprzednich.
+
+WITH 
+-- Miara patrzaca na jeden miesiac w tyl
+MEMBER [Measures].[Wypadki Poprzedni Miesiac] AS
+    ([Measures].[Interwencje Fakty Count], [Data].[Kalendarz].CurrentMember.PrevMember)
+
+SELECT 
+    -- kolumny - aktualna i poprzednia
+    {
+        [Measures].[Interwencje Fakty Count], 
+        [Measures].[Wypadki Poprzedni Miesiac]
+    } ON COLUMNS,
+    
+    -- wszystkie miesiace, non empty ukrywa puste
+    NON EMPTY [Data].[Kalendarz].[Miesiac].Members ON ROWS
+
+FROM [policjaHDview]
+WHERE ([Zdarzenia].[Kategoria].&[Drogowe])

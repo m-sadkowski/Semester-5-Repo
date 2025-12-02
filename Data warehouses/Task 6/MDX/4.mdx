@@ -1,0 +1,14 @@
+﻿-- Porównaj liczbę przeprowadzonych patroli oraz liczbę zaangażowanych funkcjonariuszy.
+
+WITH MEMBER [Measures].[Estymowana Liczba Funkcjonariuszy] AS
+    [Measures].[Patrole Fakty Count] * 2
+
+SELECT 
+    {
+        [Measures].[Patrole Fakty Count], 
+        [Measures].[Estymowana Liczba Funkcjonariuszy]
+    } ON COLUMNS,
+    
+    NON EMPTY [Data].[Miesiac].[Miesiac].Members ON ROWS
+
+FROM [policjaHDview]

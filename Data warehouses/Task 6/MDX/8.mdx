@@ -1,0 +1,12 @@
+﻿-- Zidentyfikuj wykroczenia, przy których funkcjonariusze najczęściej decydują się na pouczenie zamiast mandatu.
+
+SELECT 
+    {[Measures].[Kary Fakty Count]} ON COLUMNS,
+    -- sortowanie malejaca wg liczby pouczen
+    Order(
+        [Zdarzenia].[Rodzaj].[Rodzaj].Members,
+        [Measures].[Kary Fakty Count],
+        DESC
+    ) ON ROWS
+FROM [policjaHDview]
+WHERE ([Opis Kary].[Rodzaj].&[pouczenie])

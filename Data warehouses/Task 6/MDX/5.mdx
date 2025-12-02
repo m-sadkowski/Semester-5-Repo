@@ -1,0 +1,11 @@
+﻿-- Wskaż dzielnice i rodzaje zdarzeń, które dominowały w statystykach.
+
+SELECT 
+    {[Measures].[Interwencje Fakty Count]} ON COLUMNS,
+    -- top 5: dzielnica-rodzaj
+    TopCount(
+        ([Miejsce].[Dzielnica].[Dzielnica].Members * [Zdarzenia].[Rodzaj].[Rodzaj].Members),
+        5,
+        [Measures].[Interwencje Fakty Count]
+    ) ON ROWS
+FROM [policjaHDview]

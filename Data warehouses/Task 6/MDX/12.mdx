@@ -1,0 +1,7 @@
+﻿-- Czy decyzja o pouczeniu zależy od szkodliwości czynu?
+
+SELECT 
+    {[Measures].[Kary Fakty Count]} ON COLUMNS,
+    [Zdarzenia].[Rodzaj].[Rodzaj].Members ON ROWS
+FROM [policjaHDview]
+WHERE ([Opis Kary].[Rodzaj].&[pouczenie])

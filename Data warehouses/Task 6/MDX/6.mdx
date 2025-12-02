@@ -1,0 +1,10 @@
+﻿-- Podaj wpływ natężenia ruchu drogowego (godziny szczytu) na liczbę zdarzeń.
+
+SELECT 
+    {[Measures].[Interwencje Fakty Count]} ON COLUMNS,
+    [Miejsce].[Dzielnica].[Dzielnica].Members ON ROWS
+FROM [policjaHDview]
+WHERE (
+    [Czas].[Pora Dnia].&[po poludniu],
+    [Zdarzenia].[Kategoria].&[Drogowe]
+)

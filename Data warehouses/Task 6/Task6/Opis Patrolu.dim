@@ -1,0 +1,204 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="8333e2a2-5132-4cb7-b01c-1a526e574db4" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Opis Patrolu</ID>
+  <Name>Opis Patrolu</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2110" scrolltop="-6217" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8176" y="16007" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Opis_patrolu" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3916" height="3572" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00004c0f0000f40d0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Opis_patrolu" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2110</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-6217</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="fd7a5dcc-dd0a-48a0-95eb-39f66f5c2c6f">
+    <DataSourceViewID>policjaHDview</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="08ec2ed9-570e-4c56-92ff-22599d2eea07">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="ff95e18f-9ab1-49f9-8c31-60535b0a8342">
+      <ID>ID Opisu Patrolu</ID>
+      <Name>ID Opisu Patrolu</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e37a9a27-4d41-45a3-8449-2da9ea1ce7fd">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8220127e-7f0c-4d75-b201-ffc05b52073a">
+            <TableID>dbo_Opis_patrolu</TableID>
+            <ColumnID>ID_Opisu_patrolu</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="cc7f2d5b-6ba1-408a-816d-83838a404ec1">
+          <AttributeID>Marka Radiowozu</AttributeID>
+          <Name>Marka Radiowozu</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0d4c272e-f364-4ef0-bfba-c49ea2f1090d">
+          <AttributeID>Model Radiowozu</AttributeID>
+          <Name>Model Radiowozu</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="356876d5-ac32-47e9-b1e6-21130b6322ef">
+          <AttributeID>Nr Rejestracyjny</AttributeID>
+          <Name>Nr Rejestracyjny</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="99280405-030a-419e-a4c8-5b76c9e2b6b8">
+          <AttributeID>Nr Odznaki Kierowcy</AttributeID>
+          <Name>Nr Odznaki Kierowcy</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c8a8a64a-c659-4f5e-b9dd-dfe924b1cd89">
+          <AttributeID>Nr Odznaki Partnera</AttributeID>
+          <Name>Nr Odznaki Partnera</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9654d093-9462-49af-9951-f6593951fb2e">
+      <ID>Marka Radiowozu</ID>
+      <Name>Marka Radiowozu</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9d19e87f-dfe6-4d45-bfcf-4283eef4d1cc">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="45c5e422-8b9a-4970-9d59-043629dd44fe">
+            <TableID>dbo_Opis_patrolu</TableID>
+            <ColumnID>Marka_radiowozu</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7dcc661b-ccc8-4d96-927c-fdbcac2a54e8">
+      <ID>Model Radiowozu</ID>
+      <Name>Model Radiowozu</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="dc6b2ed7-5d54-4033-86d0-4a0e1f2c2c4c">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f48264a6-7218-4478-9209-362cac1caeb9">
+            <TableID>dbo_Opis_patrolu</TableID>
+            <ColumnID>Model_radiowozu</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5912fd9a-dcca-451f-b919-e2d11761b5f7">
+      <ID>Nr Rejestracyjny</ID>
+      <Name>Nr Rejestracyjny</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b2c735c1-ff62-4637-9099-f28dde015f74">
+          <DataType>WChar</DataType>
+          <DataSize>8</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6bac3948-9071-4edc-81a0-b67f3aed0fe4">
+            <TableID>dbo_Opis_patrolu</TableID>
+            <ColumnID>Nr_rejestracyjny</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6cd3785b-f881-4c7e-bde1-33e25c809c29">
+      <ID>Nr Odznaki Kierowcy</ID>
+      <Name>Nr Odznaki Kierowcy</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6e91b6eb-fc00-4f59-9014-882f558e6ad1">
+          <DataType>WChar</DataType>
+          <DataSize>6</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0b463e19-ca8c-4eff-a90a-f03eba4f3b48">
+            <TableID>dbo_Opis_patrolu</TableID>
+            <ColumnID>Nr_odznaki_kierowcy</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="cfd9942d-08e4-4b72-a1da-2cef88fd448d">
+      <ID>Nr Odznaki Partnera</ID>
+      <Name>Nr Odznaki Partnera</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="041a1247-1e6b-4726-857e-903dfa3a932b">
+          <DataType>WChar</DataType>
+          <DataSize>6</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="08a31271-c5f8-461f-9ad3-76c295303399">
+            <TableID>dbo_Opis_patrolu</TableID>
+            <ColumnID>Nr_odznaki_partnera</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

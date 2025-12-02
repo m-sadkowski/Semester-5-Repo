@@ -1,0 +1,9 @@
+﻿-- Czy w rejonach z większą liczbą wniosków do sądu obserwuje się spadek liczby wypadków?
+
+WITH MEMBER [Measures].[Liczba Wnioskow do Sadu] AS
+    ([Measures].[Kary Fakty Count], [Opis Kary].[Rodzaj].&[Wniosek do sadu])
+
+SELECT 
+    {[Measures].[Liczba Wnioskow do Sadu], [Measures].[Interwencje Fakty Count]} ON COLUMNS,
+    NON EMPTY [Miejsce].[Dzielnica].[Dzielnica].Members ON ROWS
+FROM [policjaHDview]

@@ -1,0 +1,10 @@
+﻿-- Porównaj średnią liczbę interwencji przypadającą na jeden patrol w bieżącym i poprzednich miesiącach.
+
+SELECT 
+    {[Measures].[Srednia_liczba_interwencji_na_patrol]} ON COLUMNS,
+    
+    NON EMPTY (
+        [Data].[Rok].[Rok].Members * [Data].[Miesiac].[Miesiac].Members
+    ) ON ROWS
+
+FROM [policjaHDview]

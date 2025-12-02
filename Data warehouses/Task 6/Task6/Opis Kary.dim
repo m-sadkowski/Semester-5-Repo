@@ -1,0 +1,281 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="eb5c95ce-f042-4001-8bf9-72dbbb5334fc" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Opis Kary</ID>
+  <Name>Opis Kary</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2057" scrolltop="-5503" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="9393" y="14076" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Opis_kary" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="4022" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b60f000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Opis_kary" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2057</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-5503</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="c894e8cf-e0d7-41e2-9205-a04eebdf3904">
+    <DataSourceViewID>policjaHDview</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="31749933-3277-4c26-9a6b-3e34cd0c426f">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="48b31639-5ff6-4b40-9e9c-344165b1ea1a">
+      <ID>ID Opisu Kary</ID>
+      <Name>ID Opisu Kary</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b58dc66b-c74d-4c8d-a647-815bc5af43d8">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="028fc82e-6132-46e6-85e6-da35cc203ddf">
+            <TableID>dbo_Opis_kary</TableID>
+            <ColumnID>ID_Opisu_kary</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="1111bb8a-0218-44af-8074-73de95ed3b4e">
+          <AttributeID>Rodzaj</AttributeID>
+          <Name>Rodzaj</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="94c7f0df-044c-4e96-84f1-a35e5e3b1e68">
+          <AttributeID>Nr Sprawy</AttributeID>
+          <Name>Nr Sprawy</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ac77f4b1-1699-4e88-9195-72d7ca0adf22">
+          <AttributeID>Podstawa Prawna</AttributeID>
+          <Name>Podstawa Prawna</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="bdab48b9-287c-4795-ba15-2d45f621d898">
+          <AttributeID>Czy Przyjeta</AttributeID>
+          <Name>Czy Przyjeta</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="49ae0406-334c-4ff3-be5d-ef8f13c5493b">
+          <AttributeID>Seria Numer Mandatu</AttributeID>
+          <Name>Seria Numer Mandatu</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8d21b665-1d2e-44b2-b6a2-713577bc7ffb">
+          <AttributeID>Forma</AttributeID>
+          <Name>Forma</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="80f50e42-d990-42b8-8163-f092a6d29400">
+          <AttributeID>Nazwa Sadu</AttributeID>
+          <Name>Nazwa Sadu</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="39ea7b5c-4344-481e-954e-2e3a56216351">
+          <AttributeID>Sygnatura Akt</AttributeID>
+          <Name>Sygnatura Akt</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0285134b-ded4-4e66-b626-b29789f6593c">
+          <AttributeID>Rodzaj Wniosku</AttributeID>
+          <Name>Rodzaj Wniosku</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b022b008-c58d-4f33-8104-d066ac219609">
+      <ID>Rodzaj</ID>
+      <Name>Rodzaj</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="336040a5-b966-4af0-bb5e-d8c327be3397">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="21fb4b3a-9001-41e5-948e-cc48b6756941">
+            <TableID>dbo_Opis_kary</TableID>
+            <ColumnID>Rodzaj</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="205bc397-267d-4550-875e-16adf42af425">
+      <ID>Nr Sprawy</ID>
+      <Name>Nr Sprawy</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="bd2fbb68-d719-4b54-9e7d-c3b110249395">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1da85a5b-259d-4a6d-8478-40a685c04ac8">
+            <TableID>dbo_Opis_kary</TableID>
+            <ColumnID>Nr_sprawy</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3ff0ff95-70a9-4605-9dad-474381cf4247">
+      <ID>Podstawa Prawna</ID>
+      <Name>Podstawa Prawna</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4c4bc632-289d-4fdd-802b-d0d208557a77">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c07ebef0-2e43-4873-b546-de977fe16e36">
+            <TableID>dbo_Opis_kary</TableID>
+            <ColumnID>Podstawa_prawna</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1811c91b-d273-49ce-bf54-5c5731e1786a">
+      <ID>Czy Przyjeta</ID>
+      <Name>Czy Przyjeta</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="44c4b370-c7ef-4d87-9f25-ed5d50fc0246">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d34e0c9e-287a-4eb8-acce-a40066d5629b">
+            <TableID>dbo_Opis_kary</TableID>
+            <ColumnID>Czy_przyjeta</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2ef31661-5a59-48f4-b9fa-2b8a8d391495">
+      <ID>Seria Numer Mandatu</ID>
+      <Name>Seria Numer Mandatu</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3060f9e2-d8a5-4adf-90d2-6ff083c7d2f9">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ff41a116-3d09-4b5f-84fc-3ff55889dfb5">
+            <TableID>dbo_Opis_kary</TableID>
+            <ColumnID>Seria_numer_mandatu</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="12bc2bdc-9356-47c4-a4dd-45760e7ab5c8">
+      <ID>Forma</ID>
+      <Name>Forma</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0b93dfa5-e56c-46b5-83c6-0aff917717cd">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4f4f708c-7438-4910-a11a-4a79c0fd517c">
+            <TableID>dbo_Opis_kary</TableID>
+            <ColumnID>Forma</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b6506723-de0c-4c88-b8d8-abfe2de2d807">
+      <ID>Nazwa Sadu</ID>
+      <Name>Nazwa Sadu</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0dc9bdda-8348-42e5-bd54-7ac863d95c67">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="069c7007-db64-41a5-b0af-bbd637dd4281">
+            <TableID>dbo_Opis_kary</TableID>
+            <ColumnID>Nazwa_sadu</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4dbef97e-1860-46df-808a-c57ea61e95bb">
+      <ID>Sygnatura Akt</ID>
+      <Name>Sygnatura Akt</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f27edf25-0029-4022-bfde-85ca36eb297b">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="75f78dbd-f565-4111-addc-edb2549e6899">
+            <TableID>dbo_Opis_kary</TableID>
+            <ColumnID>Sygnatura_akt</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ce89dd8e-bf77-47b5-94ae-4731f3023064">
+      <ID>Rodzaj Wniosku</ID>
+      <Name>Rodzaj Wniosku</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c0d8c579-9632-4ebc-bc80-6c16e16beb9b">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="da05b563-f417-4f6c-bb48-d7db35b31977">
+            <TableID>dbo_Opis_kary</TableID>
+            <ColumnID>Rodzaj_wniosku</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
