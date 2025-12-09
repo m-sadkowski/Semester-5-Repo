@@ -2,19 +2,19 @@ server:
   port: 8080
 
 spring:
-  application:
-    name: gateway-service
-  main:
-    web-application-type: reactive
   cloud:
     gateway:
       routes:
-        - id: brand-service
-          uri: http://localhost:8081
+        - id: brand-service-route
+          uri: ${BRAND_SERVICE_URL:http://brand-service:8081}
           predicates:
-            - Path=/api/brands/**
+            - Path=/brands/**
+          filters:
+            - PrefixPath=/api
 
-        - id: model-service
-          uri: http://localhost:8082
+        - id: model-service-route
+          uri: ${MODEL_SERVICE_URL:http://model-service:8082}
           predicates:
-            - Path=/api/models/**
+            - Path=/models/**
+          filters:
+            - PrefixPath=/api

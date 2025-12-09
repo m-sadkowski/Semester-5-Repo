@@ -41,7 +41,7 @@ public class BrandService {
     public BrandDto create(CreateBrandCommand command) {
         Brand brand = BrandMapper.toEntity(command);
         brandRepository.save(brand);
-        restTemplate.postForLocation("http://localhost:8082/api/brands", brand);
+        restTemplate.postForLocation("http://model-service:8082/api/brands", brand);
         return BrandMapper.toDto(brand);
     }
 
@@ -49,17 +49,14 @@ public class BrandService {
     public void update(UUID id, CreateBrandCommand command) {
         Brand brand = brandRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException(String.format("Brand with id %s not found", id)));
-
         brand.setName(command.getName());
         brand.setCountry(command.getCountry());
-
         brandRepository.save(brand);
-
-        restTemplate.put("http://localhost:8082/api/brands/" + id, brand);
+        restTemplate.put("http://model-service:8082/api/brands/" + id, brand);
     }
 
     public void delete(UUID id) {
         brandRepository.deleteById(id);
-        restTemplate.delete("http://localhost:8082/api/brands/" + id);
+        restTemplate.delete("http://model-service:8082/api/brands/" + id);
     }
 }
